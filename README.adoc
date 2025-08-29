@@ -1,0 +1,7 @@
+= Sarah's Website
+
+hello!
+
+my name's Sarah and this is the Pelican content for my https://sarah-rogue.me/[website].
+
+hope you enjoy!
