@@ -40,7 +40,7 @@ EXTRA_PATH_METADATA = {
 }
 GITHUB_URL = 'https://github.com/SarahRogue81/Pelican-Website'
 MENUITEMS = (
-        ('About', '/about-me.html'),
+        ('about', '/about-me.html'),
 )
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['asciidoc_reader']
