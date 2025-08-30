@@ -1,5 +1,6 @@
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
+SITESUBTITLE = 'my blog'
 SITEURL = ''
 
 PATH = 'content'
@@ -17,20 +18,31 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-#    ("You can modify those links in your config file", "#"),
+    ("GitHub", "https://github.com/SarahRogue81"),
 )
 
+TWITTER_USERNAME = 'SarahRogue81'
 # Social widget
 SOCIAL = (
-    ('Twitter', 'https://x.com/SarahRogue81'),
+    ('Twitter', f'https://x.com/{TWITTER_USERNAME}'),
 )
+SOCIAL_WIDGET_NAME = 'social media'
 
 DEFAULT_PAGINATION = 4
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
+EXTRA_PATH_METADATA = {
+    'images/favicon.ico': {'path': 'favicon.ico'}
+}
+GITHUB_URL = 'https://github.com/SarahRogue81/Pelican-Website'
+MENUITEMS = (
+        ('About', '/about-me.html'),
+)
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['asciidoc_reader']
 THEME = 'notmyidea'
+
