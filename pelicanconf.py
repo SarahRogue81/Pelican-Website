@@ -38,7 +38,7 @@ DISPLAY_PAGES_ON_MENU = False
 EXTRA_PATH_METADATA = {
     'images/favicon.ico': {'path': 'favicon.ico'}
 }
-GITHUB_URL = 'https://github.com/SarahRogue81/Pelican-Website'
+GITHUB_URL = 'https://github.com/SarahRogue81/notmyidea'
 MENUITEMS = (
         ('about', '/about-me.html'),
 )
