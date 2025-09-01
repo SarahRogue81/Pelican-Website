@@ -49,7 +49,7 @@ GITHUB_URL = 'https://github.com/SarahRogue81/notmyidea'
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
 MENUITEMS = (
-        ('about', '/about-me.html'),
+        ('about', '/about.html'),
 )
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['asciidoc_reader']

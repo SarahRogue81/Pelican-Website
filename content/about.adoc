@@ -1,0 +1,7 @@
+= About
+
+:category:
+:date: 2025-09-01 04:01
+:status: hidden
+
+hi! my name is *Sarah* and this is my blog
