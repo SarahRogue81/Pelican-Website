@@ -29,8 +29,7 @@ LINKS = (
 TWITTER_USERNAME = 'SarahRogue81'
 # Social widget
 SOCIAL = (
-    ('Discord', 'https://discord.com/users/sarahrogue.'),
-    ('Twitter', f'https://x.com/{TWITTER_USERNAME}'),
+    ('fa-brands fa-twitter w3-text-blue', f'https://x.com/{TWITTER_USERNAME}'),
 )
 SOCIAL_WIDGET_NAME = 'social media'
 
@@ -55,6 +54,6 @@ PLUGINS = ['asciidoc_reader']
 PORT = 1313
 STATIC_PATHS = ['images', 'LICENSE']
 SUMMARY_MAX_PARAGRAPHS = 1
-THEME = 'notmyidea'
+THEME = 'W3.CSS-Template4Pelican'
 USE_FOLDER_AS_CATEGORY = False
 
