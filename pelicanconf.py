@@ -8,6 +8,7 @@ SITESUBTITLE = 'my blog'
 SITEURL = ''
 
 PATH = 'content'
+OUTPUT_PATH = 'docs'
 
 TIMEZONE = 'America/Indiana/Indianapolis'
 
@@ -52,6 +53,7 @@ MENUITEMS = (
 )
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['asciidoc_reader']
+PORT = 1313
 STATIC_PATHS = ['images', 'LICENSE']
 THEME = 'notmyidea'
 USE_FOLDER_AS_CATEGORY = False
