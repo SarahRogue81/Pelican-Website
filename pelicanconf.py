@@ -54,6 +54,7 @@ PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['asciidoc_reader']
 PORT = 1313
 STATIC_PATHS = ['images', 'LICENSE']
+SUMMARY_MAX_PARAGRAPHS = 1
 THEME = 'notmyidea'
 USE_FOLDER_AS_CATEGORY = False
 
