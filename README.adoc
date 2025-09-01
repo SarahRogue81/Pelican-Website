@@ -1,9 +1,0 @@
-= Sarah's Website
-
-hello!
-
-my name's Sarah and this is the Pelican content for my https://sarah-rogue.me/[website]
-
-i added support for https://asciidoc.org/[AsciiDoc]
-
-hope you enjoy!
