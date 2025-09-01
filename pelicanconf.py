@@ -4,7 +4,7 @@ CURRENT_YEAR = datetime.now().year
  
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
-SITESUBTITLE = 'my blog'
+SITESUBTITLE = f'Welcome to the blog of {AUTHOR}'
 SITEURL = ''
 
 PATH = 'content'
@@ -38,6 +38,8 @@ DEFAULT_PAGINATION = 4
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+AVATAR_IMAGE = '/images/avatar.webp'
+AVATAR_MESSAGE = 'i\'m a geek emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
