@@ -1,3 +1,7 @@
+from datetime import datetime
+
+CURRENT_YEAR = datetime.now().year
+ 
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
 SITESUBTITLE = 'my blog'
@@ -41,11 +45,14 @@ EXTRA_PATH_METADATA = {
     'images/favicon.ico': {'path': 'favicon.ico'}
 }
 GITHUB_URL = 'https://github.com/SarahRogue81/notmyidea'
+LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
+LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
 MENUITEMS = (
         ('about', '/about-me.html'),
 )
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['asciidoc_reader']
+STATIC_PATHS = ['images', 'LICENSE']
 THEME = 'notmyidea'
 USE_FOLDER_AS_CATEGORY = False
 
