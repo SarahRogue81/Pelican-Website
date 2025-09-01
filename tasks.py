@@ -153,6 +153,10 @@ def gh_pages(c):
         "{deploy_path} -p".format(**CONFIG)
     )
 
+@task
+def listen(c):
+    pelican_run("--listen --port 1313")
+
 def pelican_run(cmd):
     cmd += " " + program.core.remainder  # allows to pass-through args to pelican
     pelican_main(shlex.split(cmd))
