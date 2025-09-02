@@ -1,53 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-        <head>
-                        <meta charset="utf-8" />
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                        <meta name="generator" content="Pelican" />
-                        <title>Sarah's Website</title>
-                        <link rel="stylesheet" href="https://sarah-rogue.me/theme/assets/fontawesome-free-7.0.0-web/css/all.min.css" />
-                        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
-                        <link rel="stylesheet" href="https://sarah-rogue.me/theme/css/main.css" />
-                                <link href="https://sarah-rogue.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Sarah's Website Atom Feed" />
-        </head>
+<head>
+    <title>Sarah's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://sarah-rogue.me/theme/assets/w3css/5/w3.css" rel="stylesheet">
+    <link href="https://sarah-rogue.me/theme/assets/fontawesome-free-7.0.0-web/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="https://sarah-rogue.me/theme/css/main.css" rel="stylesheet"/>
+        <link href="https://sarah-rogue.me/
+feeds/all.atom.xml"
+              type="application/atom+xml" rel="alternate" title="Sarah's Website Atom Feed"/>
+</head>
 
-        <body id="index" class="home">
-                <header id="banner" class="body">
-                        <h1><a href="https://sarah-rogue.me/">Sarah's Website <strong>my blog</strong></a></h1>
-                        <nav><ul>
-                                        <li><a href="/about.html">about</a></li>
-                        </ul></nav>
-                </header><!-- /#banner -->
-        <section id="content" class="body">
-                <p>This site currently has no content.</p>
-        </section>
-                <section id="extras" class="body">
-                                <div class="blogroll">
-                                        <h2>links</h2>
-                                        <ul>
-                                                        <li><a href="https://github.com/SarahRogue81">GitHub</a></li>
-                                        </ul>
-                                </div><!-- /.blogroll -->
-                                <div class="social">
-                                        <h2>social media</h2>
-                                        <ul>
-                                                        <li><a href="https://sarah-rogue.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+<body class="w3-light-grey">
 
-                                                        <li><a href="https://discord.com/users/sarahrogue.">Discord</a></li>
-                                                        <li><a href="https://x.com/SarahRogue81">Twitter</a></li>
-                                        </ul>
-                                </div><!-- /.social -->
-                </section><!-- /#extras -->
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
-                <footer id="contentinfo" class="body">
-                        <address id="about" class="vcard body">
-			    <div>Copyright 2025 by Sarah Rogue</div>
-			    <div><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International</a> license</div>
-                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                        </address><!-- /#about -->
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+    <h1><strong>Sarah's Website</strong></h1>
+    <p>Welcome to the blog of <span class="w3-tag">Sarah Rogue</span></p>
+    </header>
 
-                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-                </footer><!-- /#contentinfo -->
+    <!-- Grid -->
+    <div class="w3-row">
 
-        </body>
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+                <p class="w3-card-4 w3-margin w3-white">This site currently has no content.</p>
+            <!-- END BLOG ENTRIES -->
+        </div>
+
+        <!-- Introduction menu -->
+        <div class="w3-col l4">
+            <!-- About Card -->
+            <div class="w3-card w3-margin w3-margin-top">
+                <img src="/images/avatar.webp" style="width:100%" alt="Sarah Rogue">
+                <div class="w3-container w3-white">
+                    <h4><b>Sarah Rogue</b></h4>
+                    <p>i'm a geek emo🖤 girl</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- categories -->
+            <div class="w3-card w3-margin">
+                <div class="w3-container w3-padding">
+                    <h4><a href="https://sarah-rogue.me/categories.html">categories</a></h4>
+                </div>
+                <div class="w3-container w3-white">
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Labels / tags -->
+            <div class="w3-card w3-margin">
+                <div class="w3-container w3-padding">
+                    <h4><a href="https://sarah-rogue.me/tags.html">tags</a></h4>
+                </div>
+                <div class="w3-container w3-white">
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- links -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>links</h4>
+                    </div>
+                    <ul class="w3-ul w3-hoverable w3-white">
+                            <li class="w3-padding-16">
+                                <a href="https://github.com/SarahRogue81">GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+                <hr>
+
+            <!-- social media -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>social media</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p>
+                                <a class="w3-tag w3-light-grey w3-margin-bottom" href="https://sarah-rogue.me/
+
+
+
+
+
+
+
+
+
+feeds/all.atom.xml"><i
+                                        class="fa-solid fa-atom"></i></a>
+
+                                <a class="w3-tag w3-light-grey w3-margin-bottom" href="https://x.com/SarahRogue81"><i
+                                        class="fa-brands fa-twitter w3-text-blue"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+            <!-- END Introduction Menu -->
+        </div>
+
+        <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
+</div>
+
+<footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top">
+    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+    <p>Copyright 2025 Sarah Rogue</p>
+    <p><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International</a> license</p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+</body>
+
 </html>
