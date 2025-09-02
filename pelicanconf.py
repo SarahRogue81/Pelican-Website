@@ -39,7 +39,7 @@ DEFAULT_PAGINATION = 4
 # RELATIVE_URLS = True
 
 AVATAR_IMAGE = '/images/avatar.webp'
-AVATAR_MESSAGE = 'i\'m a geek emo🖤 girl'
+AVATAR_MESSAGE = 'i\'m a geeky emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
@@ -48,9 +48,6 @@ EXTRA_PATH_METADATA = {
 }
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
-MENUITEMS = (
-        ('about', '/about.html'),
-)
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['asciidoc_reader']
 PORT = 1313
