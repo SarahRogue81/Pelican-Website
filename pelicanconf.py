@@ -4,7 +4,7 @@ CURRENT_YEAR = datetime.now().year
  
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
-SITESUBTITLE = f'Welcome to the blog of {AUTHOR}'
+SITESUBTITLE = f'Welcome to the blog of <span class="w3-tag">{AUTHOR}</span>'
 SITEURL = ''
 
 PATH = 'content'
@@ -41,6 +41,7 @@ DEFAULT_PAGINATION = 4
 AVATAR_IMAGE = '/images/avatar.webp'
 AVATAR_MESSAGE = 'i\'m a geek emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
+DEFAULT_DATE = 'B %d, %Y'
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 EXTRA_PATH_METADATA = {
