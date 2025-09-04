@@ -1,5 +1,6 @@
 = WinBoat for GNU/Linux
 
+:category: GNU-Linux
 :date: 2025-09-04 01:07
 :imagesdir: /images/
 
@@ -10,9 +11,9 @@ but first
 
 i'll describe how i got it running before the install
 
-== initial install, before i fucked it up
+== *initial install, before i fucked it up*
 
-WinBoat's GitHub https://github.com/TibixDev/winboat[repo] has the https://github.com/TibixDev/winboat/releases[current release] as and AppImage
+WinBoat's GitHub https://github.com/TibixDev/winboat[repo] has the https://github.com/TibixDev/winboat/releases[current release] as an AppImage
 
 after the download, go to the download folder on the command line and execute
 
@@ -23,7 +24,7 @@ chmod +x winboat-X.Y.Z.AppImage
 
 where X, Y, and Z are the version number. in my case, v0.7.1. **note**: this is beta software and earlier today, it was v0.6.13 but changed rn when i just now checked for this writing
 
-=== before first run
+=== *before first run*
 
 install Docker and Docker Compose
 
@@ -34,7 +35,7 @@ sudo pacman -S docker docker-compose
 sudo systemctl enable docker
 sudo systemctl start docker
 
-sudo usermod =a =G docker username
+sudo usermod -a -G docker username
 ----
 
 to start, i use CachyOS, an ArchLinux distro. the first line will probably be different for. to end, `username` is your user name
@@ -47,7 +48,7 @@ echo -e "ip_tables\niptable_nat" | sudo tee /etc/modules-load.d/iptables.conf
 sudo reboot
 ----
 
-=== AppImageLaucher
+=== *AppImageLaucher*
 
 believe it or not, i'd rather not use the terminal for launching apps and i have an `apps` folder to prove it. so i use AppImageLauncher. to install
 
@@ -56,19 +57,19 @@ believe it or not, i'd rather not use the terminal for launching apps and i have
 sudo pacman -S appimagelauncher
 ----
 
-== then i fucked it all up
+== *then i fucked it all up*
 
-when you first run WinBoat, from terminal or otherwise, it displays some sort of BIO or UEFI. i skipped the FreeRDP step of the pre-install, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn't read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display
+when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-install, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn't read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display
 
-by that time, the Windodws 11 installer was in the middle of downloading and i clicked WinBoot thinking that the next time i opened it, it would start over
+by that time, the Windodws 11 installer was in the middle of downloading and i closed WinBoot thinking that the next time i opened it, it would start over
 
 but
 
 it did not start over
 
-it ran the docker image and, of course, nothing happened
+it ran the WinBoat again and, of course, nothing happened
 
-=== so, to uninstall the docker image
+=== *so, to uninstall the docker image*
 
 [source sh]
 ----
@@ -78,11 +79,11 @@ sudo rm -rf /var/lib/docker/volumes
 
 that last line might be unnecessary but i did it anyway (thx Gemini deep research)
 
-== and so i started over
+== *and so i started over*
 
 WinBoat uses QEMU from your default web browser and, below are some pics of the install and what i did after
 
-=== pics
+=== *pics*
 
 WinBoat lets you install a number of Windows versions, i picked 11 Pro
 
@@ -94,13 +95,13 @@ image::02-WinBoat-Installing-Windows-11.webp[]
 
 after some restarts, Windows opens with you already logged in
 
-sorry that i mentioned it before
+sorry that i didn't mentioned it before
 
 but
 
 WinBoat, before it creates the Docker image, prompts for RAM, Cores, and Starage Size
 
-i picked 8 GB, 4, and 64 GB respectfully
+i picked 8 GB, 4, and 64 GB respectively
 
 it also asks for which version of Windows you want and a password to login - this can be anything as it doesn't link to your Microsoft Account
 
@@ -114,7 +115,7 @@ image::04-WinBoat-Microsoft-Store-Updates.webp[]
 
 the apps all got updated first and then Windows Update finished and prompted for a reboot, which i did
 
-i had to log in, with password and was greeted with this minimal desktop and start menu
+i had to log in, with password, and was greeted with this minimal desktop and start menu
 
 image::05-WinBoat-Windows-11-Desktop.webp[]
 
@@ -124,11 +125,11 @@ image::06-WinBoat-Windows-11-Start-Menu.webp[]
 
 the next Windows Update simply installed Defender antivirus signatures, which didn't require a reboot
 
--- caveats
+== *caveats*
 
-because it is running QEMU in a devault web browser, gaming isn't an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jugsaw, etc
+because it is running QEMU in a default web browser, gaming isn't an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jugsaw, etc
 
-pls using Steam/Proton directly on your GNU/Linux machine for gaming, even simple games
+pls use Steam/Proton directly on your GNU/Linux machine for gaming, even simple games
 
 updating WinBoat to the current version involves stopping a WinBoat Windows service and deleting 16 lines at the bottom of the `~/.local/share/applications/appimagekit_*-winboat.desktop` file plus removing the old AppImage in your `~/Applications` folder
 
@@ -146,7 +147,7 @@ but
 
 it gets the job done
 
-== last words
+== *last words*
 
 this project is off to a great start but i doubt i will use it for anything
 
