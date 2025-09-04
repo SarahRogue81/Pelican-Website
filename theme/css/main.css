@@ -6,6 +6,6 @@ code {
   font-family: "Google Sans Code", monospace;
 }
 
-div.fixed-size {
-  max-width: 1400px;
+img {
+  width: 100%;
 }

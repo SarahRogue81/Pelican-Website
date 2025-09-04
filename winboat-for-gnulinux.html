@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Sarah's Website &ndash; WinBoat for GNU/Linux</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="WinBoat is a GNU/Linux app that lets you run various versions of Windoows. i fucked up the first time installing it and had a bitch of a time uninstalling it"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://sarah-rogue.me/theme/assets/w3css/5/w3.css" rel="stylesheet">
+    <link href="https://sarah-rogue.me/theme/assets/fontawesome-free-7.0.0-web/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="https://sarah-rogue.me/theme/css/main.css" rel="stylesheet"/>
+        <link href="https://sarah-rogue.me/
+feeds/all.atom.xml"
+              type="application/atom+xml" rel="alternate" title="Sarah's Website Atom Feed"/>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+    <h1><strong><a href="https://sarah-rogue.me/">Sarah's Website</a></strong></h1>
+    </header>
+
+    <article class="w3-card-4 w3-margin w3-white">
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><strong>WinBoat for GNU/Linux</strong></h1>
+        </header>
+
+        <div class="w3-container">
+            <img src="" alt="" style="width:100%">
+            <div class="w3-container">
+                <h5>Created <span
+                        class="w3-opacity">September 04, 2025</span></h5>
+            </div>
+
+            <div class="w3-container">
+                <p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.winboat.app/">WinBoat</a> is a GNU/Linux app that lets you run various versions of Windoows. i fucked up the first time installing it and had a bitch of a time uninstalling it</p>
+</div>
+<div class="paragraph">
+<p>but first</p>
+</div>
+<div class="paragraph">
+<p>i&#8217;ll describe how i got it running before the install</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_initial_install_before_i_fucked_it_up">initial install, before i fucked it up</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>WinBoat&#8217;s GitHub <a href="https://github.com/TibixDev/winboat">repo</a> has the <a href="https://github.com/TibixDev/winboat/releases">current release</a> as and AppImage</p>
+</div>
+<div class="paragraph">
+<p>after the download, go to the download folder on the command line and execute</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>chmod +x winboat-X.Y.Z.AppImage</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>where X, Y, and Z are the version number. in my case, v0.7.1. <strong>note</strong>: this is beta software and earlier today, it was v0.6.13 but changed rn when i just now checked for this writing</p>
+</div>
+<div class="sect2">
+<h3 id="_before_first_run">before first run</h3>
+<div class="paragraph">
+<p>install Docker and Docker Compose</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sudo pacman -S docker docker-compose
+
+sudo systemctl enable docker
+sudo systemctl start docker
+
+sudo usermod =a =G docker username</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>to start, i use CachyOS, an ArchLinux distro. the first line will probably be different for. to end, <code>username</code> is your user name</p>
+</div>
+<div class="paragraph">
+<p>finally, be sure the correct Kernel Modules are running</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>echo -e "ip_tables\niptable_nat" | sudo tee /etc/modules-load.d/iptables.conf
+sudo reboot</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_appimagelaucher">AppImageLaucher</h3>
+<div class="paragraph">
+<p>believe it or not, i&#8217;d rather not use the terminal for launching apps and i have an <code>apps</code> folder to prove it. so i use AppImageLauncher. to install</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sudo pacman -S appimagelauncher</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_then_i_fucked_it_all_up">then i fucked it all up</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>when you first run WinBoat, from terminal or otherwise, it displays some sort of BIO or UEFI. i skipped the FreeRDP step of the pre-install, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn&#8217;t read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display</p>
+</div>
+<div class="paragraph">
+<p>by that time, the Windodws 11 installer was in the middle of downloading and i clicked WinBoot thinking that the next time i opened it, it would start over</p>
+</div>
+<div class="paragraph">
+<p>but</p>
+</div>
+<div class="paragraph">
+<p>it did not start over</p>
+</div>
+<div class="paragraph">
+<p>it ran the docker image and, of course, nothing happened</p>
+</div>
+<div class="sect2">
+<h3 id="_so_to_uninstall_the_docker_image">so, to uninstall the docker image</h3>
+<div class="listingblock">
+<div class="content">
+<pre>sudo docker volume rm winboat
+sudo rm -rf /var/lib/docker/volumes</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>that last line might be unnecessary but i did it anyway (thx Gemini deep research)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_and_so_i_started_over">and so i started over</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>WinBoat uses QEMU from your default web browser and, below are some pics of the install and what i did after</p>
+</div>
+<div class="sect2">
+<h3 id="_pics">pics</h3>
+<div class="paragraph">
+<p>WinBoat lets you install a number of Windows versions, i picked 11 Pro</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/01-WinBoat-Windows-11-Download.webp" alt="01 WinBoat Windows 11 Download">
+</div>
+</div>
+<div class="paragraph">
+<p>then the install begins</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/02-WinBoat-Installing-Windows-11.webp" alt="02 WinBoat Installing Windows 11">
+</div>
+</div>
+<div class="paragraph">
+<p>after some restarts, Windows opens with you already logged in</p>
+</div>
+<div class="paragraph">
+<p>sorry that i mentioned it before</p>
+</div>
+<div class="paragraph">
+<p>but</p>
+</div>
+<div class="paragraph">
+<p>WinBoat, before it creates the Docker image, prompts for RAM, Cores, and Starage Size</p>
+</div>
+<div class="paragraph">
+<p>i picked 8 GB, 4, and 64 GB respectfully</p>
+</div>
+<div class="paragraph">
+<p>it also asks for which version of Windows you want and a password to login - this can be anything as it doesn&#8217;t link to your Microsoft Account</p>
+</div>
+<div class="paragraph">
+<p>the next thing i did was a Windodws Update</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/03-WinBoat-Windows-Update.webp" alt="03 WinBoat Windows Update">
+</div>
+</div>
+<div class="paragraph">
+<p>and also updated the apps in the Microsoft Store</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/04-WinBoat-Microsoft-Store-Updates.webp" alt="04 WinBoat Microsoft Store Updates">
+</div>
+</div>
+<div class="paragraph">
+<p>the apps all got updated first and then Windows Update finished and prompted for a reboot, which i did</p>
+</div>
+<div class="paragraph">
+<p>i had to log in, with password and was greeted with this minimal desktop and start menu</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/05-WinBoat-Windows-11-Desktop.webp" alt="05 WinBoat Windows 11 Desktop">
+</div>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<img src="/images/06-WinBoat-Windows-11-Start-Menu.webp" alt="06 WinBoat Windows 11 Start Menu">
+</div>
+</div>
+<div class="paragraph">
+<p>the next Windows Update simply installed Defender antivirus signatures, which didn&#8217;t require a reboot</p>
+</div>
+<div class="paragraph">
+<p>&#8201;&#8212;&#8201;caveats</p>
+</div>
+<div class="paragraph">
+<p>because it is running QEMU in a devault web browser, gaming isn&#8217;t an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jugsaw, etc</p>
+</div>
+<div class="paragraph">
+<p>pls using Steam/Proton directly on your GNU/Linux machine for gaming, even simple games</p>
+</div>
+<div class="paragraph">
+<p>updating WinBoat to the current version involves stopping a WinBoat Windows service and deleting 16 lines at the bottom of the <code>~/.local/share/applications/appimagekit_*-winboat.desktop</code> file plus removing the old AppImage in your <code>~/Applications</code> folder</p>
+</div>
+<div class="paragraph">
+<p>no Bluetooth, microphone input, audio output</p>
+</div>
+<div class="paragraph">
+<p>simply moving the cursor isn&#8217;t smooth</p>
+</div>
+<div class="paragraph">
+<p>but</p>
+</div>
+<div class="paragraph">
+<p>it gets the job done</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_last_words">last words</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>this project is off to a great start but i doubt i will use it for anything</p>
+</div>
+<div class="paragraph">
+<p>i can run Microsoft 365 in my web browser on GNU/Linux and there&#8217;a an app for everything else i want to do</p>
+</div>
+<div class="paragraph">
+<p>i&#8217;ve tested running games on CachyOS and the fps is the same as on my native Windows 11 partition</p>
+</div>
+<div class="paragraph">
+<p>so i really have no need to Windows</p>
+</div>
+<div class="paragraph">
+<p>but this project is awesome and fave and <strong>the</strong> tech talk on <a href="https://discord.com/">Discord</a></p>
+</div>
+<div class="paragraph">
+<p>hope this information helps</p>
+</div>
+</div>
+</div></p>
+            </div>
+        </div>
+    </article>
+
+    <!-- END w3-content -->
+</div>
+
+<footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top">
+    <p>Copyright 2025 Sarah Rogue</p>
+    <p><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International</a> license</p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+</body>
+
+</html>
