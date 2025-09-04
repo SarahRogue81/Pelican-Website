@@ -134,7 +134,7 @@ updating WinBoat to the current version involves stopping a WinBoat Windows serv
 
 no Bluetooth, microphone input, audio output
 
-stopping QEMU from within the WinBoat app does a hard power-off, i believe (but i could be wrong). pausing works just fine
+stopping QEMU from within the WinBoat app does a hard power-off, i believe (but i could be wrong). pausing works just fine. a shutdown within the Windows QEMU environment is the correct way
 
 it's constatnly prompting me to stop the WinBoatGuestServer
 
