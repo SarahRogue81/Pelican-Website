@@ -196,7 +196,7 @@ sudo rm -rf /var/lib/docker/volumes&lt;/pre&gt;
 &lt;p&gt;no Bluetooth, microphone input, audio output&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;stopping QEMU from within the WinBoat app does a hard power-off, i believe (but i could be wrong). pausing works just fine&lt;/p&gt;
+&lt;p&gt;stopping QEMU from within the WinBoat app does a hard power-off, i believe (but i could be wrong). pausing works just fine. a shutdown within the Windows QEMU environment is the correct way&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;it&amp;#8217;s constatnly prompting me to stop the WinBoatGuestServer&lt;/p&gt;
