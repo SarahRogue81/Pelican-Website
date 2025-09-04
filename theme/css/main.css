@@ -2,10 +2,20 @@ body,h1,h2,h3,h4,h5 {
   font-family: "Raleway", sans-serif;
 }
 
-code {
+pre, code {
   font-family: "Google Sans Code", monospace;
+}
+
+div.content {
+  background: lightgray;
+}
+
+div.content pre {
+  padding: 32px;
 }
 
 img {
   width: 100%;
 }
+
+
