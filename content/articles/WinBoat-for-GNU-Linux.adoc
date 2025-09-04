@@ -4,7 +4,7 @@
 :date: 2025-09-04 01:07
 :imagesdir: /images/
 
-https://www.winboat.app/[WinBoat] is a GNU/Linux app that lets you run various versions of Windoows. i fucked up the first time installing it and had a bitch of a time uninstalling it
+https://www.winboat.app/[WinBoat] is a GNU/Linux app that runs various versions of Windoows. i fucked up the first time installing it and had a bitch of a time uninstalling it
 
 but first
 
@@ -61,7 +61,7 @@ sudo pacman -S appimagelauncher
 
 when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-install, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn't read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display
 
-by that time, the Windodws 11 installer was in the middle of downloading and i closed WinBoot thinking that the next time i opened it, it would start over
+by that time, the Windodws 11 installer was in the middle of downloading and i closed WinBoat thinking that the next time i opened it, it would start over
 
 but
 
