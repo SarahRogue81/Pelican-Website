@@ -4,7 +4,7 @@ expertMode = true
 
 [nix]
 channel = "stable-25_05"
-packages = ["asciidoc", "bash", "gitFull", "glibcLocales", "pandoc", "fish", "openssh", "ruby_3_4", "vim-full", "asciidoctor"]
+packages = ["bash", "gitFull", "glibcLocales", "pandoc", "openssh", "ruby_3_4", "vim-full", "asciidoctor"]
 
 [workflows]
 runButton = "Project"
