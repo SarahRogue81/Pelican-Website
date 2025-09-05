@@ -38,6 +38,7 @@ DEFAULT_PAGINATION = 4
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+ASCIIDOC_CMD= '/home/runner/workspace/.local/share/gem/ruby/3.4.0/bin/asciidoctor'
 AVATAR_IMAGE = '/images/avatar.webp'
 AVATAR_MESSAGE = 'i\'m a geeky emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
