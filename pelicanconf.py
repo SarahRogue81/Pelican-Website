@@ -48,11 +48,11 @@ EXTRA_PATH_METADATA = {
 }
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
-PLUGIN_PATHS = ['../pelican-plugins']
+PLUGIN_PATHS = ['replit/pelican-plugins']
 PLUGINS = ['asciidoc_reader']
 PORT = 5000
 STATIC_PATHS = ['images', 'LICENSE']
 SUMMARY_MAX_PARAGRAPHS = 1
-THEME = '../pelican-themes/w3-personal-blog'
+THEME = 'W3.CSS-Template4Pelican'
 USE_FOLDER_AS_CATEGORY = False
 

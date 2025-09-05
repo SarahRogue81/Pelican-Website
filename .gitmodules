@@ -1,0 +1,9 @@
+[submodule "replit/pelican-themes"]
+	path = replit/pelican-themes
+	url = git@github.com:getpelican/pelican-themes.git
+[submodule "replit/pelican-plugins"]
+	path = replit/pelican-plugins
+	url = git@github.com:getpelican/pelican-plugins.git
+[submodule "replit/W3.CSS-Template4Pelican"]
+	path = replit/W3.CSS-Template4Pelican
+	url = git@github.com:SarahRogue81/W3.CSS-Template4Pelican.git
