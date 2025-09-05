@@ -50,9 +50,9 @@ LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['asciidoc_reader']
-PORT = 1313
+PORT = 5000
 STATIC_PATHS = ['images', 'LICENSE']
 SUMMARY_MAX_PARAGRAPHS = 1
-THEME = 'W3.CSS-Template4Pelican'
+THEME = '../pelican-themes/w3-personal-blog'
 USE_FOLDER_AS_CATEGORY = False
 

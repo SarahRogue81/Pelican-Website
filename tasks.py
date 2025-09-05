@@ -26,8 +26,8 @@ CONFIG = {
     "github_pages_branch": "gh-pages",
     "commit_message": f"'Publish site on {datetime.date.today().isoformat()}'",
     # Host and port for `serve`
-    "host": "localhost",
-    "port": 1313,
+    "host": "0.0.0.0",
+    "port": 5000,
 }
 
 
