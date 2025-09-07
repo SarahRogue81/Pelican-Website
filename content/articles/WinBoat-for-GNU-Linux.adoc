@@ -8,7 +8,6 @@ https://www.winboat.app/[WinBoat] is a GNU/Linux app that runs various versions 
 
 but first
 
-
 i'll describe how i got it running before the install
 
 == *initial install, before i fucked it up*
@@ -17,9 +16,9 @@ WinBoat's GitHub https://github.com/TibixDev/winboat[repo] has the https://githu
 
 after the download, go to the download folder on the command line and execute
 
-````
+```
 chmod +x winboat-X.Y.Z.AppImage
-````
+```
 
 where X, Y, and Z are the version number. in my case, v0.7.1. **note**: this is beta software and earlier today, it was v0.6.13 but changed rn when i just now checked for this writing
 
@@ -27,31 +26,31 @@ where X, Y, and Z are the version number. in my case, v0.7.1. **note**: this is 
 
 install Docker and Docker Compose
 
-````
+```
 sudo pacman -S docker docker-compose
 
 sudo systemctl enable docker
 sudo systemctl start docker
 
 sudo usermod -a -G docker username
-````
+```
 
 to start, i use CachyOS, an ArchLinux distro. the first line will probably be different for. to end, `username` is your user name
 
 finally, be sure the correct Kernel Modules are running
 
-````
+```
 echo -e "ip_tables\niptable_nat" | sudo tee /etc/modules-load.d/iptables.conf
 sudo reboot
-````
+```
 
 === *AppImageLaucher*
 
 believe it or not, i'd rather not use the terminal for launching apps and i have an `apps` folder to prove it. so i use AppImageLauncher. to install
 
-````
+```
 sudo pacman -S appimagelauncher
-````
+```
 
 == *then i fucked it all up*
 
@@ -67,10 +66,10 @@ it ran the WinBoat again and, of course, nothing happened
 
 === *so, to uninstall the docker image*
 
-````
+```
 sudo docker volume rm winboat
 sudo rm -rf /var/lib/docker/volumes
-````
+```
 
 that last line might be unnecessary but i did it anyway (thx Gemini deep research)
 
