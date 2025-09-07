@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Sarah's Website - GNU-Linux</title><link href="https://sarah-rogue.me/" rel="alternate"/><link href="https://sarah-rogue.me/feeds/gnu-linux.atom.xml" rel="self"/><id>https://sarah-rogue.me/</id><updated>2025-09-04T01:07:00-04:00</updated><subtitle>Welcome to the blog of &lt;span class="w3-tag"&gt;Sarah Rogue&lt;/span&gt;</subtitle><entry><title>WinBoat for GNU/Linux</title><link href="https://sarah-rogue.me/winboat-for-gnulinux.html" rel="alternate"/><published>2025-09-04T01:07:00-04:00</published><updated>2025-09-04T01:07:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-04:/winboat-for-gnulinux.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.winboat.app/"&gt;WinBoat&lt;/a&gt; is a GNU/Linux app that runs various versions of Windoows. i fucked up the first time installing it and had a bitch of a time uninstalling it&lt;/p&gt;</summary><content type="html">&lt;div id="preamble"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Sarah's Website - GNU-Linux</title><link href="https://sarah-rogue.me/" rel="alternate"/><link href="https://sarah-rogue.me/feeds/gnu-linux.atom.xml" rel="self"/><id>https://sarah-rogue.me/</id><updated>2025-09-04T01:07:00-04:00</updated><subtitle>Welcome to the blog of &lt;span class="w3-tag"&gt;Sarah Rogue&lt;/span&gt;</subtitle><entry><title>WinBoat for GNU/Linux</title><link href="https://sarah-rogue.me/winboat-for-gnulinux.html" rel="alternate"/><published>2025-09-04T01:07:00-04:00</published><updated>2025-09-04T01:07:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-04:/winboat-for-gnulinux.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.winboat.app/"&gt;WinBoat&lt;/a&gt; is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it&lt;/p&gt;</summary><content type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://www.winboat.app/"&gt;WinBoat&lt;/a&gt; is a GNU/Linux app that runs various versions of Windoows. i fucked up the first time installing it and had a bitch of a time uninstalling it&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.winboat.app/"&gt;WinBoat&lt;/a&gt; is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;but first&lt;/p&gt;
@@ -21,10 +21,10 @@
 &lt;div class="paragraph"&gt;
 &lt;p&gt;after the download, go to the download folder on the command line and execute&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;code&gt;&lt;code&gt;`
-chmod +x winboat-X.Y.Z.AppImage
-&lt;/code&gt;`&lt;/code&gt;&lt;/p&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;chmod +x winboat-X.Y.Z.AppImage&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;where X, Y, and Z are the version number. in my case, v0.7.1. &lt;strong&gt;note&lt;/strong&gt;: this is beta software and earlier today, it was v0.6.13 but changed rn when i just now checked for this writing&lt;/p&gt;
@@ -34,45 +34,38 @@ chmod +x winboat-X.Y.Z.AppImage
 &lt;div class="paragraph"&gt;
 &lt;p&gt;install Docker and Docker Compose&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;code&gt;``&lt;/code&gt;
-sudo pacman -S docker docker-compose&lt;/p&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;sudo pacman -S docker docker-compose
+
+sudo systemctl enable docker
+sudo systemctl start docker
+
+sudo usermod -a -G docker username&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;sudo systemctl enable docker
-sudo systemctl start docker&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;sudo usermod -a -G docker username
-&lt;code&gt;``&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;to start, i use CachyOS, an ArchLinux distro. the first line will probably be different for&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;to end, &lt;code&gt;username&lt;/code&gt; is your user name&lt;/p&gt;
+&lt;p&gt;to start, i use CachyOS, an ArchLinux distro. the first line will probably be different for. to end, &lt;code&gt;username&lt;/code&gt; is your user name&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;finally, be sure the correct Kernel Modules are running&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;code&gt;``&lt;/code&gt;
-echo -e "ip_tables\niptable_nat" | sudo tee /etc/modules-load.d/iptables.conf&lt;/p&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;echo -e "ip_tables\niptable_nat" | sudo tee /etc/modules-load.d/iptables.conf
+sudo reboot&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;sudo reboot
-&lt;code&gt;``&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="sect2"&gt;
 &lt;h3 id="_appimagelaucher"&gt;&lt;strong&gt;AppImageLaucher&lt;/strong&gt;&lt;/h3&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;believe it or not, i&amp;#8217;d rather not use the terminal for launching apps and i have an &lt;code&gt;apps&lt;/code&gt; folder to prove it. so i use AppImageLauncher. to install it&lt;/p&gt;
+&lt;p&gt;believe it or not, i&amp;#8217;d rather not use the terminal for launching apps and i have an &lt;code&gt;apps&lt;/code&gt; folder to prove it. so i use AppImageLauncher. to install&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;code&gt;&lt;code&gt;`
-sudo pacman -S appimagelauncher
-&lt;/code&gt;`&lt;/code&gt;&lt;/p&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;sudo pacman -S appimagelauncher&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -81,7 +74,7 @@ sudo pacman -S appimagelauncher
 &lt;h2 id="_then_i_fucked_it_all_up"&gt;&lt;strong&gt;then i fucked it all up&lt;/strong&gt;&lt;/h2&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-install, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn&amp;#8217;t read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing FreeRDP caused that text to display&lt;/p&gt;
+&lt;p&gt;when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-installation, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn&amp;#8217;t read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;by that time, the Windows 11 installer was in the middle of downloading and i closed WinBoat thinking that the next time i opened it, it would start over&lt;/p&gt;
@@ -97,11 +90,11 @@ sudo pacman -S appimagelauncher
 &lt;/div&gt;
 &lt;div class="sect2"&gt;
 &lt;h3 id="_so_to_uninstall_the_docker_image"&gt;&lt;strong&gt;so, to uninstall the docker image&lt;/strong&gt;&lt;/h3&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;code&gt;&lt;code&gt;`
-sudo docker volume rm winboat
-sudo rm -rf /var/lib/docker/volumes
-&lt;/code&gt;`&lt;/code&gt;&lt;/p&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;sudo docker volume rm winboat
+sudo rm -rf /var/lib/docker/volumes&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;that last line might be unnecessary but i did it anyway (thx Gemini deep research)&lt;/p&gt;
@@ -113,7 +106,7 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;h2 id="_and_so_i_started_over"&gt;&lt;strong&gt;and so i started over&lt;/strong&gt;&lt;/h2&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;WinBoat uses QEMU from your default web browser and, below are some pics of the install and what i did after&lt;/p&gt;
+&lt;p&gt;WinBoat uses QEMU from your default web browser and, below are some pics of the installation and what i did after&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="sect2"&gt;
 &lt;h3 id="_pics"&gt;&lt;strong&gt;pics&lt;/strong&gt;&lt;/h3&gt;
@@ -122,7 +115,7 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;/div&gt;
 &lt;div class="imageblock"&gt;
 &lt;div class="content"&gt;
-&lt;img src="/images/01-WinBoat-Windows-11-Download.webp" alt="01 WinBoat Windows 11 Download"&gt;
+&lt;img src="/images/WinBoat-for-GNU-Linux/01-WinBoat-Windows-11-Download.webp" alt="01 WinBoat Windows 11 Download"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
@@ -130,20 +123,20 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;/div&gt;
 &lt;div class="imageblock"&gt;
 &lt;div class="content"&gt;
-&lt;img src="/images/02-WinBoat-Installing-Windows-11.webp" alt="02 WinBoat Installing Windows 11"&gt;
+&lt;img src="/images/WinBoat-for-GNU-Linux/02-WinBoat-Installing-Windows-11.webp" alt="02 WinBoat Installing Windows 11"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;after some restarts, Windows opens with you already logged in&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;sorry that i didn&amp;#8217;t mentioned it before&lt;/p&gt;
+&lt;p&gt;sorry that i didn&amp;#8217;t mention it before&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;but&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;WinBoat, before it creates the Docker image, prompts for RAM, Cores, and Starage Size&lt;/p&gt;
+&lt;p&gt;WinBoat, before it creates the Docker image, prompts for RAM, Cores, and Storage Size&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;i picked 8 GB, 4, and 64 GB respectively&lt;/p&gt;
@@ -152,11 +145,11 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;p&gt;it also asks for which version of Windows you want and a password to login - this can be anything as it doesn&amp;#8217;t link to your Microsoft Account&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;the next thing i did was a Windodws Update&lt;/p&gt;
+&lt;p&gt;the next thing i did was a Windows Update&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="imageblock"&gt;
 &lt;div class="content"&gt;
-&lt;img src="/images/03-WinBoat-Windows-Update.webp" alt="03 WinBoat Windows Update"&gt;
+&lt;img src="/images/WinBoat-for-GNU-Linux/03-WinBoat-Windows-Update.webp" alt="03 WinBoat Windows Update"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
@@ -164,7 +157,7 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;/div&gt;
 &lt;div class="imageblock"&gt;
 &lt;div class="content"&gt;
-&lt;img src="/images/04-WinBoat-Microsoft-Store-Updates.webp" alt="04 WinBoat Microsoft Store Updates"&gt;
+&lt;img src="/images/WinBoat-for-GNU-Linux/04-WinBoat-Microsoft-Store-Updates.webp" alt="04 WinBoat Microsoft Store Updates"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
@@ -175,13 +168,13 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;/div&gt;
 &lt;div class="imageblock"&gt;
 &lt;div class="content"&gt;
-&lt;img src="/images/05-WinBoat-Windows-11-Desktop.webp" alt="05 WinBoat Windows 11 Desktop"&gt;
+&lt;img src="/images/WinBoat-for-GNU-Linux/05-WinBoat-Windows-11-Desktop.webp" alt="05 WinBoat Windows 11 Desktop"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class="imageblock"&gt;
 &lt;div class="content"&gt;
-&lt;img src="/images/06-WinBoat-Windows-11-Start-Menu.webp" alt="06 WinBoat Windows 11 Start Menu"&gt;
+&lt;img src="/images/WinBoat-for-GNU-Linux/06-WinBoat-Windows-11-Start-Menu.webp" alt="06 WinBoat Windows 11 Start Menu"&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
@@ -194,7 +187,7 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;h2 id="_caveats"&gt;&lt;strong&gt;caveats&lt;/strong&gt;&lt;/h2&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;because it is running QEMU in a default web browser, gaming isn&amp;#8217;t an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jugsaw, etc&lt;/p&gt;
+&lt;p&gt;because it is running QEMU in a default web browser, gaming isn&amp;#8217;t an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jigsaw, etc&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;pls use Steam/Proton directly on your GNU/Linux machine for gaming, even simple games&lt;/p&gt;
@@ -209,7 +202,7 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;p&gt;stopping QEMU from within the WinBoat app does a hard power-off, i believe (but i could be wrong). pausing works just fine. a shutdown within the Windows QEMU environment is the correct way&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;it&amp;#8217;s constatnly prompting me to stop the WinBoatGuestServer&lt;/p&gt;
+&lt;p&gt;it&amp;#8217;s constantly prompting me to stop the WinBoatGuestServer&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;the Windows 11 Pro install, upgrades and app updates consume 20.5 GB of storage&lt;/p&gt;
@@ -232,13 +225,13 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;p&gt;this project is off to a great start but i doubt i will use it for anything&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;i can run Microsoft 365 in my web browser on GNU/Linux and there&amp;#8217;a an app for everything else i want to do&lt;/p&gt;
+&lt;p&gt;i can run Microsoft 365 in my web browser on GNU/Linux and there&amp;#8217;s an app for everything else i want to do&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;i&amp;#8217;ve tested running games on CachyOS and the fps is the same as on my native Windows 11 partition&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;so i really have no need to Windows&lt;/p&gt;
+&lt;p&gt;so, i really have no need for Windows. sorry, Microsoft&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;but this project is awesome and fave and &lt;strong&gt;the&lt;/strong&gt; tech talk on &lt;a href="https://discord.com/"&gt;Discord&lt;/a&gt;&lt;/p&gt;
@@ -247,4 +240,4 @@ sudo rm -rf /var/lib/docker/volumes
 &lt;p&gt;hope this information helps&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><category term="GNU-Linux"/></entry></feed>
+&lt;/div&gt;</content><category term="GNU-Linux"/><category term="WinBoat"/><category term="Windows"/></entry></feed>
