@@ -1,0 +1,6 @@
+= How To Configure Your Fish Prompt
+
+:date: 09-07-2025 02:47
+:imagesdir: /images/How-To-Configure-Your-Fish-Prompt/
+:status: draft
+
