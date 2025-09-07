@@ -5,7 +5,7 @@
 :imagesdir: /images/WinBoat-for-GNU-Linux/
 :tags: WinBoat, Windows
 
-https://www.winboat.app/[WinBoat] is a GNU/Linux app that runs various versions of Windoows. i fucked up the first time installing it and had a bitch of a time uninstalling it
+https://www.winboat.app/[WinBoat] is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it
 
 but first
 
@@ -55,9 +55,9 @@ sudo pacman -S appimagelauncher
 
 == *then i fucked it all up*
 
-when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-install, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn't read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display
+when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-installation, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn't read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display
 
-by that time, the Windodws 11 installer was in the middle of downloading and i closed WinBoat thinking that the next time i opened it, it would start over
+by that time, the Windows 11 installer was in the middle of downloading and i closed WinBoat thinking that the next time i opened it, it would start over
 
 but
 
@@ -76,7 +76,7 @@ that last line might be unnecessary but i did it anyway (thx Gemini deep researc
 
 == *and so i started over*
 
-WinBoat uses QEMU from your default web browser and, below are some pics of the install and what i did after
+WinBoat uses QEMU from your default web browser and, below are some pics of the installation and what i did after
 
 === *pics*
 
@@ -90,17 +90,17 @@ image::02-WinBoat-Installing-Windows-11.webp[]
 
 after some restarts, Windows opens with you already logged in
 
-sorry that i didn't mentioned it before
+sorry that i didn't mention it before
 
 but
 
-WinBoat, before it creates the Docker image, prompts for RAM, Cores, and Starage Size
+WinBoat, before it creates the Docker image, prompts for RAM, Cores, and Storage Size
 
 i picked 8 GB, 4, and 64 GB respectively
 
 it also asks for which version of Windows you want and a password to login - this can be anything as it doesn't link to your Microsoft Account
 
-the next thing i did was a Windodws Update
+the next thing i did was a Windows Update
 
 image::03-WinBoat-Windows-Update.webp[]
 
@@ -122,7 +122,7 @@ the next Windows Update simply installed Defender antivirus signatures, which di
 
 == *caveats*
 
-because it is running QEMU in a default web browser, gaming isn't an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jugsaw, etc
+because it is running QEMU in a default web browser, gaming isn't an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jigsaw, etc
 
 pls use Steam/Proton directly on your GNU/Linux machine for gaming, even simple games
 
@@ -132,7 +132,7 @@ no Bluetooth, microphone input, audio output
 
 stopping QEMU from within the WinBoat app does a hard power-off, i believe (but i could be wrong). pausing works just fine. a shutdown within the Windows QEMU environment is the correct way
 
-it's constatnly prompting me to stop the WinBoatGuestServer
+it's constantly prompting me to stop the WinBoatGuestServer
 
 the Windows 11 Pro install, upgrades and app updates consume 20.5 GB of storage
 
@@ -146,11 +146,11 @@ it gets the job done
 
 this project is off to a great start but i doubt i will use it for anything
 
-i can run Microsoft 365 in my web browser on GNU/Linux and there'a an app for everything else i want to do
+i can run Microsoft 365 in my web browser on GNU/Linux and there's an app for everything else i want to do
 
 i've tested running games on CachyOS and the fps is the same as on my native Windows 11 partition
 
-so i really have no need to Windows
+so, i really have no need for Windows. sorry, Microsoft
 
 but this project is awesome and fave and *the* tech talk on https://discord.com/[Discord]
 
