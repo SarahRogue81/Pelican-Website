@@ -1,8 +1,8 @@
 = WinBoat for GNU/Linux
 
-:category: GNU-Linux
+:category: GNU/Linux
 :date: 2025-09-04 01:07
-:imagesdir: /images/WinBoat-for-GNU-Linux/
+:imagesdir: /images/winboat-for-gnu-linux/
 :tags: WinBoat, Windows
 
 https://www.winboat.app/[WinBoat] is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it
@@ -82,11 +82,11 @@ WinBoat uses QEMU from your default web browser and, below are some pics of the 
 
 WinBoat lets you install a number of Windows versions, i picked 11 Pro
 
-image::01-WinBoat-Windows-11-Download.webp[]
+image::01-winboat-windows-11-download.webp[]
 
 then the install begins
 
-image::02-WinBoat-Installing-Windows-11.webp[]
+image::02-winboat-installing-windows-11.webp[]
 
 after some restarts, Windows opens with you already logged in
 
@@ -102,21 +102,21 @@ it also asks for which version of Windows you want and a password to login - thi
 
 the next thing i did was a Windows Update
 
-image::03-WinBoat-Windows-Update.webp[]
+image::03-winboat-windows-update.webp[]
 
 and also updated the apps in the Microsoft Store
 
-image::04-WinBoat-Microsoft-Store-Updates.webp[]
+image::04-winboat-microsoft-store-updates.webp[]
 
 the apps all got updated first and then Windows Update finished and prompted for a reboot, which i did
 
 i had to log in, with password, and was greeted with this minimal desktop and start menu
 
-image::05-WinBoat-Windows-11-Desktop.webp[]
+image::05-winboat-windows-11-desktop.webp[]
 
 '''
 
-image::06-WinBoat-Windows-11-Start-Menu.webp[]
+image::06-winboat-windows-11-start-menu.webp[]
 
 the next Windows Update simply installed Defender antivirus signatures, which didn't require a reboot
 

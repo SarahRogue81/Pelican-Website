@@ -2,7 +2,7 @@
 
 :category: GNU/Linux 
 :date: 09-07-2025 02:47
-:imagesdir: /images/How-To-Configure-Your-Fish-Prompt/
+:imagesdir: /images/how-to-configure-your-fish-prompt/
 :status: draft
 :tags:
 
@@ -16,11 +16,13 @@ however
 
 i love the way `fish` is setup on https://cachyos.org/[CashyOS] but when i switched to https://www.fedoraproject.org/[Fedora] 42, i missed all of the epic CashyOS features that made `fish` even better 
 
-i felt like i had to do something 
+i felt like i had to do something something like this:
+
+image::python-virtual-environment.webp[]
 
 == the simple solution 
 
-don't work 
+does't work
 
 and that would be transferring my existing `~/.config/fish` folder to Fedora 
 
@@ -31,4 +33,6 @@ so what did i do?
 copying and pasting, mainly 
 
 == the solution that worked 
+
+is kinda involved but well worth it imho
 
