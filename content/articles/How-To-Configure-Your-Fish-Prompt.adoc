@@ -15,3 +15,19 @@ i'm a complete noob when it comes to `fish`
 however 
 
 i love the way `fish` is setup on https://cachyos.org/[CashyOS] but when i switched to https://www.fedoraproject.org/[Fedora] 42, i missed all of the epic CashyOS features that made `fish` even better 
+
+i felt like i had to do something 
+
+== the simple solution 
+
+don't work 
+
+and that would be transferring my existing `~/.config/fish` folder to Fedora 
+
+even transferring the CashyOS config folder doesn't work 
+
+so what did i do?
+
+copying and pasting, mainly 
+
+== the solution that worked 
