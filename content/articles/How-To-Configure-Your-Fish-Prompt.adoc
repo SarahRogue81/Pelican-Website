@@ -4,3 +4,8 @@
 :imagesdir: /images/How-To-Configure-Your-Fish-Prompt/
 :status: draft
 
+first of all, i love the command shell `fish`!!!
+
+but
+
+i'm a complete noob when it comes to `fish`
