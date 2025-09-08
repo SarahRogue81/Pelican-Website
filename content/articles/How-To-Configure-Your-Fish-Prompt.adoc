@@ -1,11 +1,17 @@
 = How To Configure Your Fish Prompt
 
+:category: GNU/Linux 
 :date: 09-07-2025 02:47
 :imagesdir: /images/How-To-Configure-Your-Fish-Prompt/
 :status: draft
+:tags:
 
 first of all, i love the command shell `fish`!!!
 
 but
 
 i'm a complete noob when it comes to `fish`
+
+however 
+
+i love the way `fish` is setup on https://cachyos.org/[CashyOS] but when i switched to https://www.fedoraproject.org/[Fedora] 42, i missed all of the epic CashyOS features that made `fish` even better 
