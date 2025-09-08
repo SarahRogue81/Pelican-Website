@@ -38,6 +38,8 @@ DEFAULT_PAGINATION = 4
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+ARTICLE_URL = '{date:%Y}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
 AVATAR_IMAGE = '/images/avatar.webp'
 AVATAR_MESSAGE = 'i\'m a geeky emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
