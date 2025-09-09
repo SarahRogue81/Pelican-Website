@@ -31,11 +31,11 @@ function fish_prompt --description 'Write out the prompt'
     set -l prompt_status (__fish_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
 
     if set -q VIRTUAL_ENV
-        set -f venv_name (basename "$VIRTUAL_ENV")
+        set -f venv_name (basename "$VIRTUAL_ENV")" "
     else
         set -f venv_name ""
     end
 
     echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
-    echo -n -s "$venv_name " $normal $suffix " "
+    echo -n -s $venv_name $normal $suffix " "
 end
