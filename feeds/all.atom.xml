@@ -176,7 +176,7 @@ alias which 'alias | /usr/bin/which --tty-only --read-alias --read-functions --s
 &lt;div class="listingblock"&gt;
 &lt;div class="content"&gt;
 &lt;pre class="highlight"&gt;&lt;code&gt;&amp;gt; ~/.conifg/
-&amp;gt; rm -rf fish    #unless you've already made changes
+&amp;gt; rm -rf fish    # unless you've already made changes
 &amp;gt; tar Jxvf ~/Downloads/fish-config.tar.xz&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
