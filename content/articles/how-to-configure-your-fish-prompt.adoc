@@ -9,7 +9,7 @@ first of all, i love the command shell `fish`!!!
 
 but
 
-i'm a complete noob when it comes to `fish`
+i'm a complete noob when it comes to `fish` and fishing as well
 
 however 
 
@@ -45,11 +45,11 @@ from my link:/src/how-to-configure-your-fish-prompt/alias.fish[`~/.config/fish/c
 
 ```
 # Replace ls with eza
-alias ls 'eza -al --color=always --group-directories-first --icons' # preferred listing
 alias la 'eza -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll 'eza -l --color=always --group-directories-first --icons'  # long format
 alias lt 'eza -aT --color=always --group-directories-first --icons' # tree listing
-alias l. "eza -a | grep -e '^\.'"                                     # show only dotfiles
+alias l. "eza -a | grep -e '^\.'"                                   # show only dotfiles
+alias lal 'eza -al --color=always --group-directories-first --icons'
 alias ls 'eza --color=always --group-directories-first --icons'
 
 # Common use
@@ -130,7 +130,7 @@ you can also link:/src/how-to-configure-your-fish-prompt/fish-config.tar.xz[down
 
 ```
 > ~/.conifg/
-> rm -rf fish    #unless you've already made changes
+> rm -rf fish    # unless you've already made changes
 > tar Jxvf ~/Downloads/fish-config.tar.xz
 ```
 
