@@ -29,6 +29,7 @@ LINKS = (
 TWITTER_USERNAME = 'SarahRogue81'
 # Social widget
 SOCIAL = (
+    ('fa-brands fa-pandora w3-text-blue', 'https://pandora.com/profile/SarahRogue81'),
     ('fa-brands fa-twitter w3-text-blue', f'https://x.com/{TWITTER_USERNAME}'),
 )
 SOCIAL_WIDGET_NAME = 'social media'
