@@ -5,7 +5,6 @@ CURRENT_YEAR = datetime.now().year
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
 SITESUBTITLE = f'Welcome to the blog of <span class="w3-tag">{AUTHOR}</span>'
-SITEURL = ''
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
@@ -17,9 +16,7 @@ DEFAULT_LANG = 'en'
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
