@@ -1,7 +1,7 @@
 from datetime import datetime
 
 CURRENT_YEAR = datetime.now().year
- 
+
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
 SITESUBTITLE = f'Welcome to the blog of <span class="w3-tag">{AUTHOR}</span>'
@@ -46,11 +46,25 @@ EXTRA_PATH_METADATA = {
 }
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
-PLUGIN_PATHS = ['replit/pelican-plugins']
-PLUGINS = ['asciidoc_reader']
+PLUGIN_PATHS = ['replit/pelican-plugins', 'replit']
+PLUGINS = ['asciidoc_reader', 'sitemap']
 PORT = 5000
 STATIC_PATHS = ['images', 'LICENSE', 'src', 'robots.txt']
 SUMMARY_MAX_PARAGRAPHS = 1
 THEME = 'W3.CSS-Template4Pelican'
 USE_FOLDER_AS_CATEGORY = False
 
+# for sitemap plugin
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.5,
+        "indexes": 0.5,
+        "pages": 0.5
+    },
+    "changefreqs": {
+        "articles": "daily",
+        "indexes": "daily",
+        "pages": "never"
+    }
+}
