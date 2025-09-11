@@ -14,13 +14,9 @@ ROBOTS_CONTENT = 'index, follow'
 SITEURL = 'https://sarah-rogue.me'
 RELATIVE_URLS = False
 
-FEED_DOMAIN = 'https://feeds.sarah-rogue.me'
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_ATOM_URL = 'all.atom.xml'
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
-CATEGORY_FEED_ATOM_URL = "{slug}.atom.xml"
 AUTHOR_FEED_ATOM = 'feeds/{slug}.atom.xml'
-AUTHOR_FEED_ATOM_URL = '{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
