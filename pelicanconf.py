@@ -41,8 +41,6 @@ ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
 AVATAR_IMAGE = '/images/avatar.webp'
 AVATAR_MESSAGE = 'i\'m a geeky emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
-DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
 EXTRA_PATH_METADATA = {
     'images/favicon.ico': {'path': 'favicon.ico'}
 }
