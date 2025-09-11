@@ -2,7 +2,10 @@
 
 :category: GNU/Linux 
 :date: 09-08-2025 23:04
-:imagesdir: /images/how-to-configure-your-fish-prompt/
+:icon: fish.webp
+:icon-alt: the fish logo
+:imagesdir: /images/how-to-configure-your-fish-prompt
+:summary: shows how to get the CachyOS features of the command shell fish into other GNU/Linux like Fedora 42
 :tags: CachyOS, Fedora, fish
 
 first of all, i love the command shell `fish`!!!
@@ -17,7 +20,8 @@ i love the way `fish` is setup on https://cachyos.org/[CashyOS] but when i switc
 
 i felt like i had to do something — something like this:
 
-image::python-virtual-environment.webp[]
+[.article-icon]
+image::python-virtual-environment.webp[command prompt that i want for fish]
 
 == the simple solution 
 
