@@ -7,6 +7,9 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+# uncomment to allow robots to index and follow
+ROBOTS_CONTENT = 'index, follow'
+
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'https://sarah-rogue.me'
 RELATIVE_URLS = False
