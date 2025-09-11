@@ -1,5 +1,5 @@
-body,h1,h2,h3,h4,h5 {
-  font-family: "Raleway", sans-serif;
+body, h1, h2, h3, h4, h5 {
+    font-family: "Raleway", sans-serif;
 }
 
 body {
@@ -7,19 +7,21 @@ body {
 }
 
 pre, code {
-  font-family: "Google Sans Code", monospace;
+    font-family: "Google Sans Code", monospace;
 }
 
 div.content {
-  background: lightgray;
+    background: lightgray;
 }
 
 div.content pre {
-  padding: 32px;
+    padding: 32px;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
-
+img.article-content {
+    width: auto;
+}
