@@ -3,7 +3,7 @@
 :category: GNU/Linux 
 :date: 09-08-2025 23:04
 :icon: fish.webp
-:icon-alt: the fish logo
+:icon_alt: the fish logo
 :imagesdir: /images/how-to-configure-your-fish-prompt
 :summary: shows how to get the CachyOS features of the command shell fish into other GNU/Linux like Fedora 42
 :tags: CachyOS, Fedora, fish
