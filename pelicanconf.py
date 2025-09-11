@@ -29,7 +29,7 @@ SOCIAL = (
     ('fa-brands fa-pandora w3-text-blue', 'https://pandora.com/profile/SarahRogue81'),
     ('fa-brands fa-twitter w3-text-blue', f'https://x.com/{TWITTER_USERNAME}'),
 )
-SOCIAL_WIDGET_NAME = 'social media'
+SOCIAL_CARD_NAME = 'social media'
 
 DEFAULT_PAGINATION = 4
 
