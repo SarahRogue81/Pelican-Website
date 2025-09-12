@@ -88,6 +88,12 @@ alias vi vim
 alias which 'type -P'
 ```
 
+**WARNING**: be sure you have `eza` installed as it isn't, by default, on Fedora 42. if you don't, your `ls` command will quit working due to the alias
+
+```
+sudo dnf install eza
+```
+
 finally, let's move onto the epic CachyOS `fish` prompt
 
 == main prompt
