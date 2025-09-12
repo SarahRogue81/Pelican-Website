@@ -1,9 +1,9 @@
 # Replace ls with eza
-alias ls 'eza -al --color=always --group-directories-first --icons' # preferred listing
 alias la 'eza -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll 'eza -l --color=always --group-directories-first --icons'  # long format
 alias lt 'eza -aT --color=always --group-directories-first --icons' # tree listing
-alias l. "eza -a | grep -e '^\.'"                                     # show only dotfiles
+alias l. "eza -a | grep -e '^\.'"                                   # show only dotfiles
+alias lal 'eza -al --color=always --group-directories-first --icons'
 alias ls 'eza --color=always --group-directories-first --icons'
 
 # Common use
@@ -19,19 +19,20 @@ alias vdir 'vdir --color=auto'
 alias grep 'grep --color=auto'
 alias fgrep 'fgrep --color=auto'
 alias egrep 'egrep --color=auto'
-alias hw 'hwinfo --short'                                   # Hardware Info
+alias hw 'hwinfo --short'                                           # Hardware Info
 
 # Get the error messages from journalctl
 alias jctl "journalctl -p 3 -xb"
 
 # root commands
-alias dnf 'sudo dnf'
+alias dnf 'sudo dnf5'
 alias reboot 'sudo reboot'
-alias shutdown 'sudo systemctl shutdown'
-alias update 'sudo dnf --refresh update'
-alias yum 'sudo dnf'
+alias shutdown 'sudo systemctl poweroff'
+alias systemctl 'sudo systemctl'
+alias update 'sudo dnf5 --refresh update'
+alias yum 'sudo dnf5'
 
 # use vim
 alias vi vim
-# include alias in the `which` command
-alias which 'alias | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot'
+# don't use the bash version of which
+alias which 'type -P'
