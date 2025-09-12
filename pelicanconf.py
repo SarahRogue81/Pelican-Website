@@ -44,6 +44,7 @@ DEFAULT_CATEGORY = 'other'
 EXTRA_PATH_METADATA = {
     'images/favicon.ico': {'path': 'favicon.ico'}
 }
+HIDE_AUTHORS = True
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
 META_DESCRIPTION = f'{AUTHOR}\'s tech and gaming blog - with a little dry humour added in'
