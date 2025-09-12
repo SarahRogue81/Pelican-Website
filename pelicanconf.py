@@ -46,6 +46,7 @@ EXTRA_PATH_METADATA = {
 }
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
+META_DESCRIPTION = f'{AUTHOR}\'s tech and gaming blog - with a little dry humour added in'
 PLUGIN_PATHS = ['replit/pelican-plugins', 'replit']
 PLUGINS = ['asciidoc_reader', 'sitemap']
 PORT = 5000
