@@ -5,7 +5,7 @@
 :icon: emo-tech-vampire.webp
 :icon_alt: emo-ironic Tarot card of me as as Emo Tech Vampire
 :imagesdir: /images/what-kind-of-halloween-monster-am-i
-:summary: i asked ChatGPT to read my tweets and figure out what kind of Halloween monster i am. the Tarot card displayyed is from Gemini
+:summary: i asked ChatGPT to read my tweets and figure out what kind of Halloween monster i am. the Tarot card displayed is from Gemini
 
 == 🧛🏻 **Monster Profile**: The Emo Tech Vampire 🧛🏻
 
