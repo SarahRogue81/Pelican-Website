@@ -45,6 +45,7 @@ DEFAULT_CATEGORY = 'other'
 EXTRA_PATH_METADATA = {
     'images/favicon.ico': {'path': 'favicon.ico'}
 }
+FONTAWESOME = '9208356911'
 HIDE_AUTHORS = True
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
