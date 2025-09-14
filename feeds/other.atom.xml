@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Sarah's Website - other</title><link href="https://sarah-rogue.me/" rel="alternate"/><link href="https://sarah-rogue.me/feeds/other.atom.xml" rel="self"/><id>https://sarah-rogue.me/</id><updated>2025-09-14T18:05:00-04:00</updated><subtitle>Welcome to the blog of &lt;span class="w3-tag"&gt;Sarah Rogue&lt;/span&gt;</subtitle><entry><title>My Disqus Test</title><link href="https://sarah-rogue.me/2025/my-disqus-test/" rel="alternate"/><published>2025-09-14T18:05:00-04:00</published><updated>2025-09-14T18:05:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-14:/2025/my-disqus-test/</id><summary type="html">&lt;p&gt;does it see the comment count?&lt;/p&gt;</summary><content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;does it see the comment count?&lt;/p&gt;
-&lt;/div&gt;</content><category term="other"/></entry></feed>
