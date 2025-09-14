@@ -109,14 +109,14 @@ the link:/src/how-to-configure-your-fish-prompt/fish_prompt.fish[`funced fish_pr
 down at the very bottom of the file, i changed it to:
 
 ```
-    if set -q VIRTUAL_ENV
-        set -f venv_name (basename "$VIRTUAL_ENV")" "
-    else
-        set -f venv_name ""
-    end
+if set -q VIRTUAL_ENV
+    set -f venv_name (basename "$VIRTUAL_ENV")" "
+else
+    set -f venv_name ""
+end
 
-    echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
-    echo -n -s $venv_name $normal $suffix " "
+echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
+echo -n -s $venv_name $normal $suffix " "
 ```
 
 what i learned is that `set -q` queries to see if the variable is set or unset
