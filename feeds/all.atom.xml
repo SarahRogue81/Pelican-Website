@@ -224,14 +224,14 @@ alias which 'type -P'&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="listingblock"&gt;
 &lt;div class="content"&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;    if set -q VIRTUAL_ENV
-        set -f venv_name (basename "$VIRTUAL_ENV")" "
-    else
-        set -f venv_name ""
-    end
+&lt;pre class="highlight"&gt;&lt;code&gt;if set -q VIRTUAL_ENV
+    set -f venv_name (basename "$VIRTUAL_ENV")" "
+else
+    set -f venv_name ""
+end
 
-    echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
-    echo -n -s $venv_name $normal $suffix " "&lt;/code&gt;&lt;/pre&gt;
+echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
+echo -n -s $venv_name $normal $suffix " "&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;

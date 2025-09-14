@@ -60,7 +60,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <header class="w3-container w3-center w3-padding-32">
     </header>
 
-    <article class="w3-card-4 w3-section w3-white" style="margin-left: 12.5%; width: 75%">
+    <article class="w3-card-4 w3-section w3-white">
         <header class="w3-container w3-center w3-padding-32">
             <h1>How To Configure Your Fish Prompt</h1>
         </header>
@@ -216,14 +216,14 @@ alias which 'type -P'</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>    if set -q VIRTUAL_ENV
-        set -f venv_name (basename "$VIRTUAL_ENV")" "
-    else
-        set -f venv_name ""
-    end
+<pre class="highlight"><code>if set -q VIRTUAL_ENV
+    set -f venv_name (basename "$VIRTUAL_ENV")" "
+else
+    set -f venv_name ""
+end
 
-    echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
-    echo -n -s $venv_name $normal $suffix " "</code></pre>
+echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
+echo -n -s $venv_name $normal $suffix " "</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -273,7 +273,7 @@ alias which 'type -P'</code></pre>
         </div>
     </article>
 
-        <div id="disqus_thread" class="w3-card-4 w3-padding w3-white" style="margin-left: 12.5%; width: 75%;"></div>
+        <div id="disqus_thread" class="w3-card-4 w3-padding w3-white" style="margin-left: 10%; width: 80%;"></div>
         <script>
             /**
              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
