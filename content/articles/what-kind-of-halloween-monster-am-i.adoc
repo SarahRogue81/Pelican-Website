@@ -1,13 +1,14 @@
-= what kind of Halloween monster am i?
+= Monster Profile
 
 :category: humour
 :date: 09-11-2025 12:25
 :icon: emo-tech-vampire.webp
 :icon_alt: emo-ironic Tarot card of me as as Emo Tech Vampire
 :imagesdir: /images/what-kind-of-halloween-monster-am-i
+:slug: what-kind-of-halloween-monster-am-i
 :summary: i asked ChatGPT to read my tweets and figure out what kind of Halloween monster i am. the Tarot card displayed is from Gemini
 
-== 🧛🏻 **Monster Profile**: The Emo Tech Vampire 🧛🏻
+== 🧛🏻 The Emo Tech Vampire 🧛🏻
 
 **Alias**: The Eternal Sceptic
 
@@ -15,7 +16,7 @@
 
 **Alignment**: Anti-hype, pro-decay.
 
-=== **Appearance**:
+=== Appearance:
 
     * Pale, sleepless eyes reflecting old Apple keynote streams.
 
@@ -25,7 +26,7 @@
 
     * Fingers forever smudged with ghostly screen-glare.
 
-=== **Powers**:
+=== Powers:
 
     * **Hype Drain**: Instantly sucks the life out of tech buzzwords (“Pro Max,” “Titanium,” “AI-powered”) leaving only silence.
 
@@ -35,7 +36,7 @@
 
     * **Mirror Blackout**: Keynotes and tech blogs glitch whenever you gaze upon them.
 
-=== **Weaknesses**:
+=== Weaknesses:
 
     * Sunlight is fine, but a genuine innovation can burn like holy water.
 
@@ -43,7 +44,7 @@
 
     * Haunted by the ghosts of discontinued features.
 
-=== **Aesthetic**:
+=== Aesthetic:
 
     * Gothic refusal.
 
