@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Sarah's Website - Archives</title>
+    <title>Sarah's Website &ndash; My Disqus Test</title>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="twitter:card" content=" TWITTER_CARD_VALUE | default('summary') }}"/>
         <meta name="twitter:site" content="@SarahRogue81"/>
+    <meta name="description" content="does it see the comment count?"/>
+        <meta name="twitter:creator" content="@SarahRogue81"/>
         <link href="https://sarah-rogue.me/
 feeds/all.atom.xml"
               type="application/atom+xml" rel="alternate" title="Sarah's Website Atom Feed"/>
@@ -58,18 +60,28 @@ and is wrapped around the whole page content, except for the footer in this exam
     <header class="w3-container w3-center w3-padding-32">
     </header>
 
-    <h2>Archives for Sarah's Website</h2>
+    <article class="w3-card-4 w3-section w3-white" style="margin-left: 12.5%; width: 75%">
+        <header class="w3-container w3-center w3-padding-32">
+            <h1>My Disqus Test</h1>
+        </header>
 
-    <dl>
-            <dt>Sun 14 September 2025</dt>
-            <dd><a href="https://sarah-rogue.me/2025/my-disqus-test/">My Disqus Test</a></dd>
-            <dt>Thu 11 September 2025</dt>
-            <dd><a href="https://sarah-rogue.me/2025/what-kind-of-halloween-monster-am-i/">Monster Profile</a></dd>
-            <dt>Mon 08 September 2025</dt>
-            <dd><a href="https://sarah-rogue.me/2025/how-to-configure-your-fish-prompt/">How To Configure Your Fish Prompt</a></dd>
-            <dt>Thu 04 September 2025</dt>
-            <dd><a href="https://sarah-rogue.me/2025/winboat-for-gnulinux/">WinBoat for GNU/Linux</a></dd>
-    </dl>
+        <div class="w3-container">
+            <img class="article-icon" src="https://sarah-rogue.me/"
+                 alt="">
+            <div class="w3-container">
+                <h5>Created <span
+                        class="w3-opacity">September 14, 2025</span></h5>
+            </div>
+
+            <div class="w3-container">
+                <p><div class="paragraph">
+<p>does it see the comment count?</p>
+</div></p>
+            </div>
+
+                <div id="disqus_thread" class="w3-container"></div>
+        </div>
+    </article>
 
     <!-- END w3-content -->
 </div>
@@ -95,6 +107,29 @@ and is wrapped around the whole page content, except for the footer in this exam
     Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a><br/>
 </footer>
 
+        <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+
+            var disqus_config = function () {
+                this.page.url = 'https://sarah-rogue.me/2025/my-disqus-test/';
+                this.page.identifier = 'my-disqus-test';
+                this.page.title = 'My Disqus Test';
+            };
+
+            (function () {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document, s = d.createElement('script');
+
+                s.src = '//sarahs-website.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
 </body>
 
 </html>
