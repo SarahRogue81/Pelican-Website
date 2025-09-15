@@ -43,7 +43,12 @@ AVATAR_IMAGE = '/images/avatar.webp'
 AVATAR_MESSAGE = 'i\'m a geeky emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
 EXTRA_PATH_METADATA = {
-    'images/favicon.ico': {'path': 'favicon.ico'}
+    'images/favicons/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
+    'images/favicons/android-chrome-512x512.png': {'path': 'android-chrome-512x512.png'},
+    'images/favicons/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
+    'images/favicons/favicon.ico': {'path': 'favicon.ico'},
+    'images/favicons/favicon.svg': {'path': 'favicon.svg'},
+    'images/favicons/manifest.json': {'path': 'manifest.json'},
 }
 FONTAWESOME = '9208356911'
 HIDE_AUTHORS = True
