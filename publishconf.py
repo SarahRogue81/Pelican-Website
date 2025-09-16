@@ -21,6 +21,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SHORTNAME = 'sarahs-website'
+# DISQUS_SHORTNAME = 'sarahs-website'
 GOOGLE_ANALYTICS = 'G-LLEP9M3CT4'
 
