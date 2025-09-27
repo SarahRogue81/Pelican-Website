@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Sarah's Website &ndash; Using Google Drive on Archlinux - KDE Plasma</title>
+    <title>Sarah's Website &ndash; Using Google Drive on Arch Linux - KDE Plasma</title>
     <meta charset="utf-8">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +31,6 @@ feeds/all.atom.xml"
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://sarah-rogue.me/theme/css/pygments.css"/>
     <link rel="stylesheet" href="https://sarah-rogue.me/theme/css/main.css"/>
         <script async src="https://kit.fontawesome.com/9208356911.js" crossorigin="anonymous"></script>
         <!-- Google tag (gtag.js) -->
@@ -61,7 +60,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <article class="w3-card-4 w3-section w3-white">
         <header class="w3-container w3-center w3-padding-32">
-            <h1>Using Google Drive on Archlinux - KDE Plasma</h1>
+            <h1>Using Google Drive on Arch Linux - KDE Plasma</h1>
         </header>
 
         <div class="w3-container">
@@ -82,7 +81,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <p>also</p>
 </div>
 <div class="paragraph">
-<p>i got this info from Reddit but can&#8217;t find the links - sorry about that</p>
+<p>i got this info from <a href="https://reddit.com/r/kde/">Reddit</a> but can&#8217;t find the links - sorry about that</p>
 </div>
 </div>
 </div>
@@ -92,13 +91,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="paragraph">
 <p>first, install kio-gdrive</p>
 </div>
+<div class="paragraph">
+<p>the following command is to install kio-gdrive on Arch Linux. i use CachyOS in particular but any <code>pacman</code> OS works</p>
+</div>
+<div class="paragraph">
+<p>obviously, you can install kio-gdrive on other GNU/Linux operating systems</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">sudo pacman -S kio-gdrive</code></pre>
+<pre class="highlight"><code class="language-fish" data-lang="fish">sudo pacman -S kio-gdrive</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>the problem is that it doesn&#8217;t work at all with KDE</p>
+<p>the problem is that simply installing kio-gdrive doesn&#8217;t work at all with KDE</p>
 </div>
 <div class="paragraph">
 <p>however</p>
@@ -114,11 +119,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">kate /usr/share/accounts/providers/kde/google.provider</code></pre>
+<pre class="highlight"><code class="language-fish" data-lang="fish">kate /usr/share/accounts/providers/kde/google.provider</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>delete all the contents (every line) and copy and paste this instead:</p>
+<p>delete all the contents (every line) and copy and paste this XML doc instead:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -162,10 +167,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </div>
 </div>
 <div class="paragraph">
-<p>of course</p>
-</div>
-<div class="paragraph">
-<p>be sure and save the file - it will prompt you for your sudo password and save just fine</p>
+<p>of course, be sure and save the file - it will prompt you for your sudo password and save the file just fine</p>
 </div>
 </div>
 </div>
@@ -173,16 +175,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 <h2 id="_next_steps">next steps</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>now, go into System Settings</p>
+<p>now, go into <strong>System Settings</strong></p>
 </div>
 <div class="paragraph">
-<p>under the Networking section on the left</p>
+<p>under the <strong>Networking</strong> section on the left</p>
 </div>
 <div class="paragraph">
-<p>select Online Accounts</p>
+<p>select <strong>Online Accounts</strong></p>
 </div>
 <div class="paragraph">
-<p>on the upper, right, click <strong>+ Add Account</strong> and choose Google</p>
+<p>on the upper, right, click <strong>+ Add Account</strong> and choose <strong>Google</strong></p>
 </div>
 <div class="paragraph">
 <p>it should look like</p>
@@ -196,7 +198,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <p>notice it says GNOME and not KDE</p>
 </div>
 <div class="paragraph">
-<p>enter your Gmail account address and password on the next screen. i use Passkeys, so it&#8217;s a bit different for me, but still works</p>
+<p>enter your Gmail account address and password on the next screens. i use Passkeys, so it&#8217;s a bit different for me, but still works</p>
 </div>
 <div class="paragraph">
 <p>once you&#8217;re logged in and given GNOME all the settings, Dolphin will just work, as-is</p>
@@ -216,14 +218,13 @@ and is wrapped around the whole page content, except for the footer in this exam
 <p>yes, it&#8217;s a bit of work - but very doable</p>
 </div>
 <div class="paragraph">
-<p>the above file, is also available for you to just download and use as is - it&#8217;s exactly the same as above</p>
+<p>the file, above, is also available for you to just download and use as is - it&#8217;s exactly the same as above</p>
 </div>
 <div class="paragraph">
 <p><strong>File</strong>: <a href="/src/using-google-drive-on-archlinux-kde-plasma/google.provider"><code>google.provider</code></a></p>
 </div>
 <div class="paragraph">
-<p><strong><code>md5sum</code></strong>: <code>a65ed15fb05cb710409434d5f6b87171</code>
-`</p>
+<p><strong><code>md5sum</code></strong>: <code>a65ed15fb05cb710409434d5f6b87171</code></p>
 </div>
 </div>
 </div></p>
