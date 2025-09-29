@@ -39,7 +39,6 @@ DEFAULT_PAGINATION = 4
 
 ARTICLE_URL = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
-AVATAR_IMAGE = '/images/avatar.webp'
 AVATAR_MESSAGE = 'i\'m a geeky emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
 EXTRA_PATH_METADATA = {
