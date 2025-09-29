@@ -1,0 +1,254 @@
+<!-- <!doctype html> -->
+<html lang="en">
+<head>
+    <title>Sarah's Website &ndash; Using Google Drive on Arch Linux - KDE Plasma</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content=" TWITTER_CARD_VALUE | default('summary') }}"/>
+        <meta name="twitter:site" content="@SarahRogue81"/>
+    <meta name="description" content="definitive steps to get Google Drive to work under Dolphin, the KDE file manager"/>
+        <meta name="twitter:creator" content="@SarahRogue81"/>
+        <link href="https://sarah-rogue.me/
+feeds/all.atom.xml"
+              type="application/atom+xml" rel="alternate" title="Sarah's Website Atom Feed"/>
+
+    <!-- Basic Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Web App Manifest for Android/Chrome -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Theme Color for Browsers -->
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" href="https://www.w3schools.com/w3css/5/w3.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://sarah-rogue.me/theme/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLEP9M3CT4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'G-LLEP9M3CT4');
+        </script>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+    </header>
+
+    <article class="w3-card-4 w3-section w3-white">
+        <header class="w3-container w3-center w3-padding-32">
+            <h1>Using Google Drive on Arch Linux - KDE Plasma</h1>
+        </header>
+
+        <div class="w3-container">
+            <img class="article-icon" src="https://sarah-rogue.me/images/using-google-drive-on-archlinux-kde-plasma/gdrive.webp"
+                 alt="Google Drive logo">
+            <div class="w3-container">
+                <h5>Created <span
+                        class="w3-opacity">September 25, 2025</span></h5>
+            </div>
+
+            <div class="w3-container">
+                <p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>NOTE</strong>: i&#8217;ve been told that problems exist with KDE, in general - not just KDE Plasma. so, if you&#8217;re having trouble getting Google Drive to work with Dolphin, these steps may just work anyway</p>
+</div>
+<div class="paragraph">
+<p>also</p>
+</div>
+<div class="paragraph">
+<p>i got this info from <a href="https://reddit.com/r/kde/">Reddit</a> but can&#8217;t find the links - sorry about that</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_initial_steps">initial steps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>first, install kio-gdrive</p>
+</div>
+<div class="paragraph">
+<p>the following command is to install kio-gdrive on Arch Linux. i use CachyOS in particular but any <code>pacman</code> OS works</p>
+</div>
+<div class="paragraph">
+<p>obviously, you can install kio-gdrive on other GNU/Linux operating systems</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-fish" data-lang="fish">sudo pacman -S kio-gdrive</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>the problem is that simply installing kio-gdrive doesn&#8217;t work at all with KDE</p>
+</div>
+<div class="paragraph">
+<p>however</p>
+</div>
+<div class="paragraph">
+<p>it works just fine with GNOME</p>
+</div>
+<div class="paragraph">
+<p>so, before you go to System Settings, Networking, Oneline Accounts, and add Google</p>
+</div>
+<div class="paragraph">
+<p>do this first:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-fish" data-lang="fish">kate /usr/share/accounts/providers/kde/google.provider</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>delete all the contents (every line) and copy and paste this XML doc instead:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;provider id="google"&gt;
+  &lt;name&gt;Google&lt;/name&gt;
+
+  &lt;description&gt;GNOME-ID, Google Drive and YouTube&lt;/description&gt;
+  &lt;icon&gt;im-google&lt;/icon&gt;
+  &lt;translations&gt;kaccounts-providers&lt;/translations&gt;
+  &lt;domains&gt;.*google\.com&lt;/domains&gt;
+
+  &lt;template&gt;
+    &lt;group name="auth"&gt;
+      &lt;setting name="method"&gt;oauth2&lt;/setting&gt;
+      &lt;setting name="mechanism"&gt;web_server&lt;/setting&gt;
+      &lt;group name="oauth2"&gt;
+        &lt;group name="web_server"&gt;
+          &lt;setting name="Host"&gt;accounts.google.com&lt;/setting&gt;
+          &lt;setting name="AuthPath"&gt;o/oauth2/auth?access_type=offline&amp;amp;approval_prompt=force&lt;/setting&gt;
+          &lt;setting name="TokenPath"&gt;o/oauth2/token&lt;/setting&gt;
+          &lt;setting name="RedirectUri"&gt;http://localhost/oauth2callback&lt;/setting&gt;
+
+          &lt;setting name="ResponseType"&gt;code&lt;/setting&gt;
+          &lt;setting type="as" name="Scope"&gt;[
+              'https://www.googleapis.com/auth/userinfo.email',
+              'https://www.googleapis.com/auth/userinfo.profile',
+              'https://www.googleapis.com/auth/calendar',
+              'https://www.googleapis.com/auth/tasks',
+              'https://www.googleapis.com/auth/drive'
+          ]&lt;/setting&gt;
+          &lt;setting type="as" name="AllowedSchemes"&gt;['https']&lt;/setting&gt;
+          &lt;setting name="ClientId"&gt;44438659992-7kgjeitenc16ssihbtdjbgguch7ju55s.apps.googleusercontent.com&lt;/setting&gt;
+          &lt;setting name="ClientSecret"&gt;-gMLuQyDiI0XrQS_vx_mhuYF&lt;/setting&gt;
+          &lt;setting type="b" name="ForceClientAuthViaRequestBody"&gt;true&lt;/setting&gt;
+        &lt;/group&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+  &lt;/template&gt;
+&lt;/provider&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>of course, be sure and save the file - it will prompt you for your sudo password and save the file just fine</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_next_steps">next steps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>now, go into <strong>System Settings</strong></p>
+</div>
+<div class="paragraph">
+<p>under the <strong>Networking</strong> section on the left</p>
+</div>
+<div class="paragraph">
+<p>select <strong>Online Accounts</strong></p>
+</div>
+<div class="paragraph">
+<p>on the upper, right, click <strong>+ Add Account</strong> and choose <strong>Google</strong></p>
+</div>
+<div class="paragraph">
+<p>it should look like</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/using-google-drive-on-archlinux-kde-plasma/Online-Accounts-Google-Login.webp" alt="Gmail login for GNOME" width="not KDE">
+</div>
+</div>
+<div class="paragraph">
+<p>notice it says GNOME and not KDE</p>
+</div>
+<div class="paragraph">
+<p>enter your Gmail account address and password on the next screens. i use Passkeys, so it&#8217;s a bit different for me, but still works</p>
+</div>
+<div class="paragraph">
+<p>once you&#8217;re logged in and given GNOME all the settings, Dolphin will just work, as-is</p>
+</div>
+<div class="paragraph">
+<p>in Network, Google Drive, of course</p>
+</div>
+<div class="paragraph">
+<p>and, obviously, you can pin it as well</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>yes, it&#8217;s a bit of work - but very doable</p>
+</div>
+<div class="paragraph">
+<p>the file, above, is also available for you to just download and use as is - it&#8217;s exactly the same as above</p>
+</div>
+<div class="paragraph">
+<p><strong>File</strong>: <a href="/src/using-google-drive-on-archlinux-kde-plasma/google.provider"><code>google.provider</code></a></p>
+</div>
+<div class="paragraph">
+<p><strong><code>md5sum</code></strong>: <code>a65ed15fb05cb710409434d5f6b87171</code></p>
+</div>
+</div>
+</div></p>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- END w3-content -->
+</div>
+
+<footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top">
+    <nav class="w3-row">
+        <div class="w3-threequarter w3-container">
+                <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">&laquo; Previous
+                </button>
+                <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Next &raquo;</button>
+        </div>
+        <div class="w3-quarter w3-container w3-right-align">
+            <a href="https://sarah-rogue.me/">
+                <button class="w3-button w3-black w3-padding-large w3-margin-bottom">🏠 Home</button>
+            </a>
+        </div>
+    </nav>
+    Copyright 2025 Sarah Rogue<br/>
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International</a> license<br/>
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a><br/>
+</footer>
+</body>
+
+</html>

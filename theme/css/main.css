@@ -1,0 +1,127 @@
+/* --- Define Noto Sans Regular --- */
+@font-face {
+    font-family: 'Noto Sans Regular'; /* This is the name you'll use in your CSS */
+    font-style: normal;
+    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-display: swap; /* Big performance boost! Shows fallback text first. */
+    src: url('/theme/assets/google-fonts/NotoSans-Regular.woff2') format('woff2'); /* Modern browsers */
+}
+
+/* --- Define Noto Sans Bold --- */
+@font-face {
+    font-family: 'Noto Sans Bold'; /* This is the name you'll use in your CSS */
+    font-style: normal;
+    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-display: swap; /* Big performance boost! Shows fallback text first. */
+    src: url('/theme/assets/google-fonts/NotoSans-Bold.woff2') format('woff2'); /* Modern browsers */
+}
+
+/* --- Define Noto Sans Italic --- */
+@font-face {
+    font-family: 'Noto Sans Italic'; /* This is the name you'll use in your CSS */
+    font-style: normal;
+    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-display: swap; /* Big performance boost! Shows fallback text first. */
+    src: url('/theme/assets/google-fonts/NotoSans-Italic.woff2') format('woff2'); /* Modern browsers */
+}
+
+/* --- Define Noto Sans Bold Italic --- */
+@font-face {
+    font-family: 'Noto Sans Bold Italic'; /* This is the name you'll use in your CSS */
+    font-style: normal;
+    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-display: swap; /* Big performance boost! Shows fallback text first. */
+    src: url('/theme/assets/google-fonts/NotoSans-BoldItalic.woff2') format('woff2'); /* Modern browsers */
+}
+
+/* --- Define Noto Sans Mono --- */
+@font-face {
+    font-family: 'Noto Sans Mono'; /* This is the name you'll use in your CSS */
+    font-style: normal;
+    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-display: swap; /* Big performance boost! Shows fallback text first. */
+    src: url('/theme/assets/google-fonts/NotoSansMono-Regular.woff2') format('woff2'); /* Modern browsers */
+}
+
+body {
+    font-family: 'Noto Sans Regular', sans-serif;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Sans Bold', sans-serif;
+    font-weight: bolder;
+}
+
+b, strong {
+    font-family: 'Noto Sans Bold', sans-serif;
+}
+
+i, em {
+    font-family: 'Noto Sans Italic', sans-serif;
+}
+
+b i, i b, strong em, em strong {
+    font-family: 'Noto Sans Bold Italic', sans-serif;
+}
+
+pre, code {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+div.content {
+    background: lightgray;
+}
+
+div.content pre {
+    padding: 32px;
+}
+
+img {
+    width: 100%;
+}
+
+img.article-icon {
+    width: auto;
+}
+
+footer {
+    font-size: 16px;
+}
+
+.social-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.twitter-icon {
+    color: #1DA1F2; /* classic Twitter blue */
+}
+
+.twitter-icon:hover {
+    color: #0c85d0; /* A darker blue */
+}
+
+.github-icon {
+    color: #4078c0; /* "GitHub Blue" */
+}
+
+.github-icon:hover {
+    color: #2c5282; /* A darker blue */
+}
+
+.pandora-icon {
+    color: #00A0EE; /* Pandora Blue */
+}
+
+.pandora-icon:hover {
+    color: #007bb5; /* A darker blue */
+}
+
+.atom-icon {
+    color: #F26522; /* RSS Feed Orange */
+}
+
+.atom-icon:hover {
+    color: #A34116; /* RSS Feed Orange */
+}
