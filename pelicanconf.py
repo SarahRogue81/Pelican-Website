@@ -26,9 +26,9 @@ LINKS = (
 TWITTER_USERNAME = 'SarahRogue81'
 # Social widget
 SOCIAL = (
-    ('fa-brands fa-github', 'https://github.com/SarahRogue81'),
-    ('fa-brands fa-pandora w3-text-blue', 'https://pandora.com/profile/SarahRogue81'),
-    ('fa-brands fa-twitter w3-text-blue', f'https://x.com/{TWITTER_USERNAME}'),
+    ('github', 'https://github.com/SarahRogue81'),
+    ('pandora', 'https://pandora.com/profile/SarahRogue81'),
+    ('twitter', f'https://x.com/{TWITTER_USERNAME}'),
 )
 SOCIAL_CARD_NAME = 'social media'
 
@@ -50,7 +50,6 @@ EXTRA_PATH_METADATA = {
     'images/favicons/favicon.svg': {'path': 'favicon.svg'},
     'images/favicons/manifest.json': {'path': 'manifest.json'},
 }
-FONTAWESOME = '9208356911'
 HIDE_AUTHORS = True
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
