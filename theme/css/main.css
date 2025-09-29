@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Noto Sans Regular'; /* This is the name you'll use in your CSS */
     font-style: normal;
-    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-weight: 400; /* 400 is 'normal' or 'regular' */
     font-display: swap; /* Big performance boost! Shows fallback text first. */
     src: url('/theme/assets/google-fonts/NotoSans-Regular.woff2') format('woff2'); /* Modern browsers */
 }
@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'Noto Sans Bold'; /* This is the name you'll use in your CSS */
     font-style: normal;
-    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-weight: 400; /* 400 is 'normal' or 'regular' */
     font-display: swap; /* Big performance boost! Shows fallback text first. */
     src: url('/theme/assets/google-fonts/NotoSans-Bold.woff2') format('woff2'); /* Modern browsers */
 }
@@ -20,7 +20,7 @@
 @font-face {
     font-family: 'Noto Sans Italic'; /* This is the name you'll use in your CSS */
     font-style: normal;
-    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-weight: 400; /* 400 is 'normal' or 'regular' */
     font-display: swap; /* Big performance boost! Shows fallback text first. */
     src: url('/theme/assets/google-fonts/NotoSans-Italic.woff2') format('woff2'); /* Modern browsers */
 }
@@ -29,7 +29,7 @@
 @font-face {
     font-family: 'Noto Sans Bold Italic'; /* This is the name you'll use in your CSS */
     font-style: normal;
-    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-weight: 400; /* 400 is 'normal' or 'regular' */
     font-display: swap; /* Big performance boost! Shows fallback text first. */
     src: url('/theme/assets/google-fonts/NotoSans-BoldItalic.woff2') format('woff2'); /* Modern browsers */
 }
@@ -38,7 +38,7 @@
 @font-face {
     font-family: 'Noto Sans Mono'; /* This is the name you'll use in your CSS */
     font-style: normal;
-    font-weight: regular; /* 400 is 'normal' or 'regular' */
+    font-weight: 400; /* 400 is 'normal' or 'regular' */
     font-display: swap; /* Big performance boost! Shows fallback text first. */
     src: url('/theme/assets/google-fonts/NotoSansMono-Regular.woff2') format('woff2'); /* Modern browsers */
 }
@@ -123,5 +123,5 @@ footer {
 }
 
 .atom-icon:hover {
-    color: #A34116; /* RSS Feed Orange */
+    color: #C0501B; /* A darker orange */
 }
