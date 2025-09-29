@@ -4,3 +4,6 @@
 [submodule "replit/sitemap"]
 	path = replit/sitemap
 	url = git@github.com:pelican-plugins/sitemap.git
+[submodule "replit/asciidoc_reader"]
+	path = replit/asciidoc_reader
+	url = git@github.com:SarahRogue81/asciidoc_reader.git
