@@ -81,12 +81,6 @@ img.article-icon {
     width: auto;
 }
 
-/*
-footer {
-    font-size: 16px;
-}
-*/
-
 .social-icons {
     width: 20px;
     height: 20px;
@@ -123,3 +117,5 @@ footer {
 .atom-icon:hover {
     color: #D95A1F; /* A darker orange */
 }
+
+@import url("https://www.w3schools.com/w3css/5/w3.css");
