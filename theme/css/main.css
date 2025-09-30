@@ -1,3 +1,5 @@
+@import url("https://www.w3schools.com/w3css/5/w3.css");
+
 /* --- Define Noto Sans Regular --- */
 @font-face {
     font-family: 'Noto Sans Regular'; /* This is the name you'll use in your CSS */
@@ -117,5 +119,3 @@ img.article-icon {
 .atom-icon:hover {
     color: #D95A1F; /* A darker orange */
 }
-
-@import url("https://www.w3schools.com/w3css/5/w3.css");
