@@ -32,7 +32,7 @@ SOCIAL = (
 )
 SOCIAL_CARD_NAME = 'social media'
 
-DEFAULT_PAGINATION = 4
+DEFAULT_PAGINATION = 2
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
