@@ -7,3 +7,6 @@
 [submodule "replit/asciidoc_reader"]
 	path = replit/asciidoc_reader
 	url = git@github.com:SarahRogue81/asciidoc_reader.git
+[submodule "replit/W3.CSS-Template4Pelican.wiki"]
+	path = replit/W3.CSS-Template4Pelican.wiki
+	url = git@github.com:SarahRogue81/W3.CSS-Template4Pelican.wiki.git
