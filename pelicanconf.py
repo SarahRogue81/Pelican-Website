@@ -20,7 +20,7 @@ AUTHOR_FEED_ATOM = None
 
 # Blogroll
 LINKS = (
-    ("GitHub", "https://github.com/SarahRogue81"),
+    ('GitHub', 'https://github.com/SarahRogue81'),
 )
 
 TWITTER_USERNAME = 'SarahRogue81'
@@ -62,15 +62,14 @@ USE_FOLDER_AS_CATEGORY = False
 
 # for sitemap plugin
 SITEMAP = {
-    "format": "xml",
-    "priorities": {
-        "articles": 0.5,
-        "indexes": 0.5,
-        "pages": 0.5
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
     },
-    "changefreqs": {
-        "articles": "daily",
-        "indexes": "daily",
-        "pages": "never"
+    'changefreqs': {
+        'articles': 'daily',
+        'indexes': 'daily',
+        'pages': 'never',
     }
 }
