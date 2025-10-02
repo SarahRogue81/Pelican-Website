@@ -26,9 +26,15 @@ LINKS = (
 TWITTER_USERNAME = 'SarahRogue81'
 # Social widget
 SOCIAL = (
+    ('bluesky', 'https://bsky.app/profile/sarahrogue.bsky.social'),
+    ('discord', 'https://discord.com/users/sarahrogue.'),
     ('github', 'https://github.com/SarahRogue81'),
     ('pandora', 'https://pandora.com/profile/SarahRogue81'),
+    ('pinterest', 'https://www.pinterest.com/rogue0121/'),
+    ('reddit', 'https://www.reddit.com/user/No_Koala7908/'),
+    ('tiktok', 'https://www.tiktok.com/@sarah.rogue4'),
     ('twitter', f'https://x.com/{TWITTER_USERNAME}'),
+    ('youtube', 'https://www.youtube.com/@SarahRogue-u2j'),
 )
 SOCIAL_CARD_NAME = 'social media'
 
