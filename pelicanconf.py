@@ -20,7 +20,7 @@ AUTHOR_FEED_ATOM = None
 
 # Blogroll
 LINKS = (
-    ('GitHub', 'https://github.com/SarahRogue81'),
+    ('PythonAnywhere', 'https://SarahRogue81.pythonanywhere.com/'),
 )
 
 TWITTER_USERNAME = 'SarahRogue81'
