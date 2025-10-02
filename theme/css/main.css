@@ -51,12 +51,28 @@ img.article-icon {
   color: #4e5d94; /* darker blue */
 }
 
+.facebook-icon {
+  color: #1877f2; /* Facebook bright blue */
+}
+
+.facebook-icon:hover {
+  color: #1465cc; /* darker blue */
+}
+
 .github-icon {
-  color: #4078c0; /* "GitHub blue" */
+  color: #4078c0; /* GitHub blue */
 }
 
 .github-icon:hover {
   color: #2c5282; /* A darker blue */
+}
+
+.instagram-icon {
+  color: #e1306c; /* Instagram gradient */
+}
+
+.instagram-icon:hover {
+  color: #b42656; /* A darker gradient */
 }
 
 .pandora-icon {
@@ -99,6 +115,7 @@ img.article-icon {
   color: #0c85d0; /* A darker blue */
 }
 
+.threads-icon:hover,
 .youtube-icon:hover {
   color: grey;
 }
