@@ -1,131 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://sarah-rogue.me">
-    <link rel="preconnect" href="https://sarah-rogue.me" crossorigin>
+  <head>
+    <link rel="preconnect" href="https://sarah-rogue.me" />
+    <link rel="preconnect" href="https://sarah-rogue.me" crossorigin />
 
-        <link rel="canonical" href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/">
+    <meta charset="utf-8" />
+    <base href="/" />
 
-    <title>Sarah's Website &ndash; Using Google Drive on Arch Linux - KDE Plasma</title>
-    <meta charset="utf-8">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:site" content="@SarahRogue81"/>
-    <meta name="description" content="definitive steps to get Google Drive to work under Dolphin, the KDE file manager"/>
-        <meta name="twitter:creator" content="@SarahRogue81"/>
-        <link href="https://sarah-rogue.me/
-feeds/all.atom.xml"
-              type="application/atom+xml" rel="alternate" title="Sarah's Website Atom Feed"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow"
+    />
 
-    <!-- Basic Favicons -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+    <meta name="twitter:site" content="@SarahRogue81" />
+ 
+    <title>Sarah's Website - Using Google Drive on Arch Linux - KDE Plasma</title>
 
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
 
-    <!-- Web App Manifest for Android/Chrome -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    />
 
-    <!-- Theme Color for Browsers -->
-    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-brown.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://sarah-rogue.me/theme/css/main.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-    <link rel="stylesheet" href="https://sarah-rogue.me/theme/css/w3.css" type="text/css">
-    <style>
-        @font-face {
-            font-family: 'Noto Sans Regular';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('/theme/assets/google-fonts/NotoSans-Regular.woff2') format('woff2');
-        }
-
-        @font-face {
-            font-family: 'Noto Sans Bold';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('/theme/assets/google-fonts/NotoSans-Bold.woff2') format('woff2');
-        }
-
-        @font-face {
-            font-family: 'Noto Sans Italic';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('/theme/assets/google-fonts/NotoSans-Italic.woff2') format('woff2');
-        }
-
-        @font-face {
-            font-family: 'Noto Sans Bold Italic';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('/theme/assets/google-fonts/NotoSans-BoldItalic.woff2') format('woff2');
-        }
-
-        @font-face {
-            font-family: 'Noto Sans Mono';
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url('/theme/assets/google-fonts/NotoSansMono-Regular.woff2') format('woff2');
-        }
-
-        body {
-            font-family: 'Noto Sans Regular', sans-serif;
-        }
-
-        h1, h2, h3, h4, h5 {
-            font-family: 'Noto Sans Bold', sans-serif;
-        }
-
-        b, strong {
-            font-family: 'Noto Sans Bold', sans-serif;
-        }
-
-        i, em {
-            font-family: 'Noto Sans Italic', sans-serif;
-        }
-
-        b i, i b, strong em, em strong {
-            font-family: 'Noto Sans Bold Italic', sans-serif;
-        }
-
-        pre, code {
-            font-family: 'Noto Sans Mono', monospace;
-        }
-    </style>
-    <link rel="stylesheet" href="https://sarah-rogue.me/theme/css/main.css" type="text/css">
-
-</head>
-
-<body class="w3-light-grey">
-
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-
-    <!-- Header -->
-    <header class="w3-container w3-center w3-padding-32">
+  <body>
+    <header class="w3-panel w3-theme w3-center">
+      <div class="w3-xxxlarge w3-text-bold>">Sarah's Website</div>
     </header>
 
-    <article class="w3-card-4 w3-section w3-white">
-        <header class="w3-container w3-center w3-padding-32">
-            <h1>Using Google Drive on Arch Linux - KDE Plasma</h1>
-        </header>
+    <nav class="w3-panel w3-theme-d3">
+      <a href="https://sarah-rogue.me/" class="w3-btn w3-theme-dark">Home</a>
+    </nav>
 
-        <div class="w3-container">
-            <img class="article-icon" src="https://sarah-rogue.me/images/using-google-drive-on-archlinux-kde-plasma/gdrive.webp"
-                 alt="Google Drive logo">
-            <div class="w3-container">
-                <h5>Created <span
-                        class="w3-opacity">September 25, 2025</span></h5>
-            </div>
-
-            <div class="w3-container">
-                <p><div id="preamble">
+  <article>
+    <header>
+      <h2>
+        <a href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/" rel="bookmark"
+           title="Permalink to Using Google Drive on Arch Linux - KDE Plasma">Using Google Drive on Arch Linux - KDE Plasma</a></h2>
+      
+    </header>
+    <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>NOTE</strong>: i&#8217;ve been told that problems exist with KDE, in general - not just KDE Plasma. so, if you&#8217;re having trouble getting Google Drive to work with Dolphin, these steps may just work anyway</p>
@@ -280,33 +216,49 @@ and is wrapped around the whole page content, except for the footer in this exam
 <p><strong><code>md5sum</code></strong>: <code>a65ed15fb05cb710409434d5f6b87171</code></p>
 </div>
 </div>
-</div></p>
-            </div>
-        </div>
-    </article>
-
-
-
-    <!-- END w3-content -->
 </div>
+    <footer>
+      <p>Published: <time datetime="2025-09-25T01:56:00-04:00">
+        Thu 25 September 2025
+      </time></p>
+        <address>
+          By             <a href="https://sarah-rogue.me/author/sarah-rogue.html">Sarah Rogue</a>
+        </address>
+        <p>
+          Category: <a href="https://sarah-rogue.me/category/gnulinux.html">GNU/Linux</a>
+        </p>
+        <p>
+          Tags:
+            <a href="https://sarah-rogue.me/tag/cachyos.html">CachyOS</a>
+            <a href="https://sarah-rogue.me/tag/archlinux.html">Archlinux</a>
+            <a href="https://sarah-rogue.me/tag/kde-plasma.html">KDE Plasma</a>
+            <a href="https://sarah-rogue.me/tag/dolphin.html">Dolphin</a>
+        </p>
+    </footer>
+  </article>
 
-<footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top">
-    <nav class="w3-row">
-        <div class="w3-threequarter w3-container">
-                    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">&laquo; Previous</button>
+    <footer class="w3-panel w3-theme-l2 w3-center w3-mobile">
+      <div class="w3-cell-row">Copyright  by Sarah Rogue</div>
+      <div class="w3-cell-row">
+        <a href="/">Sarah's Website</a> by Sarah Rogue is licensed
+        under the
+        <a
+          href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+          >Attribution-NonCommercial-NoDerivatives 4.0 International</a
+        >
+      </div>
+      <div class="w3-cell-row">
+        Powered by <a href="https://www.w3schools.com/w3css">W3.CSS</a> and
+        <a
+          href="https://github.com/Woz-U-Group-Projects/team-glampfire-trail-mix/wiki"
+          >What's the Scoop?™</a
+        >
+      </div>
+    </footer>
 
-                    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Next &raquo;</button>
-        </div>
-        <div class="w3-quarter w3-container w3-right-align">
-            <a href="https://sarah-rogue.me/">
-                <button class="w3-button w3-black w3-padding-large w3-margin-bottom">🏠 Home</button>
-            </a>
-        </div>
-    </nav>
-    Copyright 2025 Sarah Rogue<br/>
-    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International</a> license<br/>
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a><br/>
-</footer>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/9208356911.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
