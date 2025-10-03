@@ -4,7 +4,7 @@ CURRENT_YEAR = datetime.now().year
 
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
-SITESUBTITLE = f'Welcome to the blog of <span class="w3-tag">{AUTHOR}</span>'
+# SITESUBTITLE = f'Welcome to the blog of <span class="w3-tag">{AUTHOR}</span>'
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
@@ -55,6 +55,7 @@ EXTRA_PATH_METADATA = {
     'images/favicons/favicon.svg': {'path': 'favicon.svg'},
     'images/favicons/manifest.json': {'path': 'manifest.json'},
 }
+FONT_AWESOME = 9208356911
 HIDE_AUTHORS = True
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
