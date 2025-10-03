@@ -38,7 +38,7 @@ SOCIAL = (
 )
 SOCIAL_CARD_NAME = 'social media'
 
-DEFAULT_PAGINATION = 2
+DEFAULT_PAGINATION = 1
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
@@ -63,7 +63,7 @@ PLUGIN_PATHS = ['replit']
 PLUGINS = ['asciidoc_reader', 'sitemap']
 STATIC_PATHS = ['images', 'src', 'robots.txt']
 SUMMARY_MAX_PARAGRAPHS = 1
-THEME = 'W3.CSS-Template4Pelican'
+THEME = 'WhatsTheScoop'
 USE_FOLDER_AS_CATEGORY = False
 
 # for sitemap plugin
