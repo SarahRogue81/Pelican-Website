@@ -64,7 +64,7 @@ PLUGIN_PATHS = ['replit']
 PLUGINS = ['asciidoc_reader', 'sitemap']
 STATIC_PATHS = ['images', 'src', 'robots.txt']
 SUMMARY_MAX_PARAGRAPHS = 1
-THEME = 'W3.CSS-Template4Pelican'
+THEME = 'WhatsTheScoop'
 USE_FOLDER_AS_CATEGORY = False
 
 # for sitemap plugin
