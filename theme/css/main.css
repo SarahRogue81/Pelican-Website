@@ -1,121 +1,66 @@
-body {
-  font-size: 16px;
+body, h1, h2, h3, h4, h5 {
+    font-family: "Raleway", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: bolder;
+pre, code {
+    font-family: "IBM Plex Mono", monospace;
 }
 
-div.content {
-  background: lightgray;
+.sr-xxxlarge {
+    font-size: 48px;
 }
 
-img {
-  width: 100%;
+.sr-text-bold {
+    font-weight: bold;
 }
 
-img.article-icon {
-  width: auto;
+.sr-text-small {
+    font-size: 16px;
 }
 
-.social-icons {
-  width: 24px;
-  height: 24px;
+.sr-text-center {
+    text-align: center;
 }
 
-.atom-icon {
-  color: #f26522; /* RSS Feed Orange */
+.sr-centre {
+    text-align: center;
 }
 
-.atom-icon:hover {
-  color: #d95a1f; /* A darker orange */
+.sr-panel {
+    margin: 16px;
+    padding: 16px;
 }
 
-.bluesky-icon {
-  color: #87ceeb; /* Bluesky blue */
+.sr-border {
+    border: 1px solid black;
 }
 
-.bluesky-icon:hover {
-  color: #4682b4; /* darker blue */
+.sr-margin-top {
+    margin-top: 16px;
 }
 
-.discord-icon {
-  color: #5865f2; /* Discord blue */
+.sr-right-align {
+    text-align: right;
 }
 
-.discord-icon:hover {
-  color: #4e5d94; /* darker blue */
+.sr-center {
+    text-align: center;
 }
 
-.facebook-icon {
-  color: #1877f2; /* Facebook bright blue */
+.sr-theme {
+    color: white;
+    background-color: #795548;
 }
 
-.facebook-icon:hover {
-  color: #1465cc; /* darker blue */
+.sr-theme-light {
+    color: white;
+    background-color: #b89588;
 }
 
-.github-icon {
-  color: #4078c0; /* GitHub blue */
+.sr-theme-dark {
+    background-color: #553c33;
 }
 
-.github-icon:hover {
-  color: #2c5282; /* A darker blue */
-}
-
-.instagram-icon {
-  color: #e1306c; /* Instagram gradient */
-}
-
-.instagram-icon:hover {
-  color: #b42656; /* A darker gradient */
-}
-
-.pandora-icon {
-  color: #00a0ee; /* Pandora blue */
-}
-
-.pandora-icon:hover {
-  color: #007bb5; /* A darker blue */
-}
-
-.pinterest-icon {
-  color: #e60023; /* Pinterest red */
-}
-
-.pinterest-icon:hover {
-  color: #b2001b; /* A darker red */
-}
-
-.reddit-icon {
-  color: #e60023; /* Reddit orangered */
-}
-
-.reddit-icon:hover {
-  color: #b2001b; /* A darker orangered */
-}
-
-.tiktok-icon {
-  color: #fe2c55; /* TikTok pinkred */
-}
-
-.tiktok-icon:hover {
-  color: #c32344; /* A darker pinkred */
-}
-
-.twitter-icon {
-  color: #1da1f2; /* classic Twitter blue */
-}
-
-.twitter-icon:hover {
-  color: #0c85d0; /* A darker blue */
-}
-
-.threads-icon:hover,
-.youtube-icon:hover {
-  color: grey;
+.sr-theme-darker {
+    background-color: #3d2b24;
 }
