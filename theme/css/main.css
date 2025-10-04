@@ -35,6 +35,10 @@ pre, code {
     border: 1px solid black;
 }
 
+.sr-margin-bottom {
+    margin-bottom: 16px;
+}
+
 .sr-margin-top {
     margin-top: 16px;
 }
@@ -45,6 +49,10 @@ pre, code {
 
 .sr-center {
     text-align: center;
+}
+
+.sr-light-grey {
+    background-color: lightgrey;
 }
 
 .sr-theme {
