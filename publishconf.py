@@ -15,6 +15,8 @@ SITEURL = 'https://sarah-rogue.me'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
