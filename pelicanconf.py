@@ -23,21 +23,6 @@ LINKS = (
     ('PythonAnywhere', 'https://SarahRogue81.pythonanywhere.com/'),
 )
 
-TWITTER_USERNAME = 'SarahRogue81'
-# Social widget
-SOCIAL = (
-    ('bluesky', 'https://bsky.app/profile/sarahrogue.bsky.social'),
-    ('discord', 'https://discord.com/users/sarahrogue.'),
-    ('github', 'https://github.com/SarahRogue81'),
-    ('pandora', 'https://pandora.com/profile/SarahRogue81'),
-    ('pinterest', 'https://www.pinterest.com/rogue0121/'),
-    ('reddit', 'https://www.reddit.com/user/No_Koala7908/'),
-    ('tiktok', 'https://www.tiktok.com/@sarah.rogue4'),
-    ('twitter', f'https://x.com/{TWITTER_USERNAME}'),
-    ('youtube', 'https://www.youtube.com/@SarahRogue-u2j'),
-)
-SOCIAL_CARD_NAME = 'social media'
-
 DEFAULT_PAGINATION = 1
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -56,7 +41,6 @@ EXTRA_PATH_METADATA = {
     'images/favicons/manifest.json': {'path': 'manifest.json'},
 }
 FONT_AWESOME = 9208356911
-HIDE_AUTHORS = True
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
 META_DESCRIPTION = f'{AUTHOR}\'s tech and gaming blog - with a little dry humour added in'
@@ -65,6 +49,7 @@ PLUGINS = ['asciidoc_reader', 'sitemap']
 STATIC_PATHS = ['images', 'src', 'robots.txt']
 SUMMARY_MAX_PARAGRAPHS = 1
 THEME = 'WhatsTheScoop'
+TWITTER_USERNAME = 'SarahRogue81'
 USE_FOLDER_AS_CATEGORY = False
 
 # for sitemap plugin
