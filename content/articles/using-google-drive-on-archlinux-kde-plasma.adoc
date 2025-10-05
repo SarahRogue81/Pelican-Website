@@ -84,7 +84,7 @@ delete all the contents (every line) and copy and paste this XML doc instead:
 
 ----
 
-of course, be sure and save the file - it will prompt you for your sudo password and save the file just fine
+of course, be sure and save the file - it will prompt you for your `sudo` password and save the file just fine
 
 == next steps
 
