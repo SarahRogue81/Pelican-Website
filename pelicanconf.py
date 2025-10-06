@@ -11,7 +11,7 @@ OUTPUT_PATH = 'docs'
 
 TIMEZONE = 'America/Indiana/Indianapolis'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = 'en-gb'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -41,12 +41,15 @@ EXTRA_PATH_METADATA = {
     'images/favicons/manifest.json': {'path': 'manifest.json'},
 }
 FONT_AWESOME = 9208356911
+HOSTING_PROVIDER = 'Cloudflare'
+HOSTING_PROVIDER_URL = 'https://www.cloudflare.com/'
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
 META_DESCRIPTION = f'{AUTHOR}\'s tech and gaming blog - with a little dry humour added in'
+OVERRIDE_CSS = 'styles.css'
 PLUGIN_PATHS = ['replit']
 PLUGINS = ['asciidoc_reader', 'sitemap']
-STATIC_PATHS = ['images', 'src', 'robots.txt']
+STATIC_PATHS = ['images', 'src', 'robots.txt', 'css']
 SUMMARY_MAX_PARAGRAPHS = 1
 THEME = 'WhatsTheScoop'
 TWITTER_USERNAME = 'SarahRogue81'
