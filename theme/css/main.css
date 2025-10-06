@@ -6,29 +6,12 @@ pre, code {
     font-family: "IBM Plex Mono", monospace;
 }
 
-.sr-xxxlarge {
-    font-size: 48px;
-}
-
-.sr-text-bold {
-    font-weight: bold;
-}
-
-.sr-text-small {
-    font-size: 16px;
-}
-
-.sr-text-centre {
-    text-align: center;
-}
-
-.sr-panel {
-    margin: 16px;
-    padding: 16px;
-}
-
 .sr-border {
     border: 1px solid black;
+}
+
+.sr-float-right {
+    float: right;
 }
 
 .sr-margin-bottom {
@@ -39,16 +22,37 @@ pre, code {
     margin-top: 16px;
 }
 
+.sr-padding {
+    padding: 16px;
+}
+
+.sr-padding-8 {
+    padding: 8px;
+}
+
+.sr-panel {
+    margin: 16px;
+    padding: 16px;
+}
+
 .sr-right-align {
     text-align: right;
 }
 
-.sr-center {
+.sr-text-bold {
+    font-weight: bold;
+}
+
+.sr-text-centre {
     text-align: center;
 }
 
-.sr-light-grey {
-    background-color: lightgrey;
+.sr-text-small {
+    font-size: 16px;
+}
+
+.sr-xxxlarge {
+    font-size: 48px;
 }
 
 .sr-theme {
