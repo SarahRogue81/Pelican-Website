@@ -13,3 +13,6 @@
 [submodule "replit/WhatsTheScoop"]
 	path = replit/WhatsTheScoop
 	url = git@github.com:SarahRogue81/WhatsTheScoop.git
+[submodule "replit/WhatsTheScoop.wiki"]
+	path = replit/WhatsTheScoop.wiki
+	url = git@github.com:SarahRogue81/WhatsTheScoop.wiki.git
