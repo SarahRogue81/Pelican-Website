@@ -44,22 +44,30 @@ a:hover {
     color: #ffffff;
 }
 
-.emo-paginator {
+.sr-paginator {
     display: inline-block;
 }
 
-.emo-paginator a,
-.emo-paginator span {
-    padding: 5px 15px;
+.sr-paginator a,
+.sr-paginator span {
     border-radius: 25px;
     font-size: 0.8em;
-    margin: 0 2px;
 }
 
-/* Oval-shaped header, footer, and navbar */
 nav.sr-theme-darker,
-footer.sr-theme-light {
+footer.sr-theme-light,
+header.sr-article-header {
     border-radius: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 16px;
+}
+
+nav.sr-theme-darker,
+footer.sr-theme-light,
+main.container-fluid {
+    width: 90%;
+    margin-left: 5%;
+}
+
+footer.sr-theme-light {
+    font-size: 0.8em;
 }
