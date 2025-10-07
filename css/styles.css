@@ -54,17 +54,20 @@ a:hover {
     font-size: 0.8em;
 }
 
-/* Oval-shaped header, footer, and navbar */
 nav.sr-theme-darker,
 footer.sr-theme-light,
-sr-article-header {
+header.sr-article-header {
     border-radius: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 16px;
 }
 
 nav.sr-theme-darker,
-footer.sr-theme-light
-{
-    margin: 16px;
+footer.sr-theme-light,
+main.container-fluid {
+    width: 90%;
+    margin-left: 5%;
+}
+
+footer.sr-theme-light {
+    font-size: 0.8em;
 }
