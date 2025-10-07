@@ -24,6 +24,10 @@ a:hover {
     color: #9932cc; /* DarkOrchid */
 }
 
+nav a button.sr-theme-dark {
+	border-radius: 25px;
+}
+
 .sr-theme {
     background-color: #111111;
     color: #ffffff;
