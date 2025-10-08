@@ -11,7 +11,7 @@ OUTPUT_PATH = 'docs'
 
 TIMEZONE = 'America/Indiana/Indianapolis'
 
-DEFAULT_LANG = 'en-gb'
+DEFAULT_LANG = 'en-GB'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
