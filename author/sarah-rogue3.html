@@ -14,7 +14,7 @@
         <meta name="twitter:site" content="@SarahRogue81"/>
         <meta name="twitter:creator" content="@SarahRogue81"/>
 
-    <meta name="description" content="definitive steps to get Google Drive to work under Dolphin, the KDE file manager"/>
+    <meta name="description" content="shows how to get the CachyOS features of the command shell fish into other GNU/Linux like Fedora 42"/>
     <title>Sarah's Website - Articles by Sarah Rogue</title>
     <link rel="shortcut icon" href="/favicon.ico"/>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
@@ -48,146 +48,181 @@
 <main class="container-fluid">
     <article class="sr-panel sr-border">
     <header class="sr-article-header sr-theme-light sr-padding">
-        <h1>Using Google Drive on Arch Linux - KDE Plasma <span class="sr-theme-light sr-float-right sr-text-small"><a href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/">permalink</a></span></h1>
+        <h1>How To Configure Your Fish Prompt <span class="sr-theme-light sr-float-right sr-text-small"><a href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/">permalink</a></span></h1>
         <div class="sr-right-align sr-text-small">by Sarah Rogue
-            on September 25, 2025</div>
+            on September 08, 2025</div>
     </header>
     <div class="sr-margin-top"><div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>NOTE</strong>: i&#8217;ve been told that problems exist with KDE, in general - not just KDE Plasma. so, if you&#8217;re having trouble getting Google Drive to work with Dolphin, these steps may just work anyway</p>
+<p>first of all, i love the command shell <code>fish</code>!!!</p>
 </div>
 <div class="paragraph">
-<p>also</p>
+<p>but</p>
 </div>
 <div class="paragraph">
-<p>i got this info from <a href="https://reddit.com/r/kde/">Reddit</a> but can&#8217;t find the links - sorry about that</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_initial_steps">initial steps</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>first, install kio-gdrive</p>
-</div>
-<div class="paragraph">
-<p>the following command is to install kio-gdrive on Arch Linux. i use CachyOS in particular but any <code>pacman</code> OS works</p>
-</div>
-<div class="paragraph">
-<p>obviously, you can install kio-gdrive on other GNU/Linux operating systems</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-fish" data-lang="fish">sudo pacman -S kio-gdrive</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>the problem is that simply installing kio-gdrive doesn&#8217;t work at all with KDE</p>
+<p>i&#8217;m a complete noob when it comes to <code>fish</code> and fishing as well</p>
 </div>
 <div class="paragraph">
 <p>however</p>
 </div>
 <div class="paragraph">
-<p>it works just fine with GNOME</p>
+<p>i love the way <code>fish</code> is setup on <a href="https://cachyos.org/">CashyOS</a> but when i switched to <a href="https://www.fedoraproject.org/">Fedora</a> 42, i missed all of the epic CashyOS features that made <code>fish</code> even better</p>
 </div>
 <div class="paragraph">
-<p>so, before you go to System Settings, Networking, Oneline Accounts, and add Google</p>
+<p>i felt like i had to do something — something like this:</p>
 </div>
-<div class="paragraph">
-<p>do this first:</p>
-</div>
-<div class="listingblock">
+<div class="imageblock article-icon">
 <div class="content">
-<pre class="highlight"><code class="language-fish" data-lang="fish">kate /usr/share/accounts/providers/kde/google.provider</code></pre>
+<img src="/images/how-to-configure-your-fish-prompt/python-virtual-environment.webp" alt="command prompt that i want for fish">
 </div>
-</div>
-<div class="paragraph">
-<p>delete all the contents (every line) and copy and paste this XML doc instead:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;provider id="google"&gt;
-  &lt;name&gt;Google&lt;/name&gt;
-
-  &lt;description&gt;GNOME-ID, Google Drive and YouTube&lt;/description&gt;
-  &lt;icon&gt;im-google&lt;/icon&gt;
-  &lt;translations&gt;kaccounts-providers&lt;/translations&gt;
-  &lt;domains&gt;.*google\.com&lt;/domains&gt;
-
-  &lt;template&gt;
-    &lt;group name="auth"&gt;
-      &lt;setting name="method"&gt;oauth2&lt;/setting&gt;
-      &lt;setting name="mechanism"&gt;web_server&lt;/setting&gt;
-      &lt;group name="oauth2"&gt;
-        &lt;group name="web_server"&gt;
-          &lt;setting name="Host"&gt;accounts.google.com&lt;/setting&gt;
-          &lt;setting name="AuthPath"&gt;o/oauth2/auth?access_type=offline&amp;amp;approval_prompt=force&lt;/setting&gt;
-          &lt;setting name="TokenPath"&gt;o/oauth2/token&lt;/setting&gt;
-          &lt;setting name="RedirectUri"&gt;http://localhost/oauth2callback&lt;/setting&gt;
-
-          &lt;setting name="ResponseType"&gt;code&lt;/setting&gt;
-          &lt;setting type="as" name="Scope"&gt;[
-              'https://www.googleapis.com/auth/userinfo.email',
-              'https://www.googleapis.com/auth/userinfo.profile',
-              'https://www.googleapis.com/auth/calendar',
-              'https://www.googleapis.com/auth/tasks',
-              'https://www.googleapis.com/auth/drive'
-          ]&lt;/setting&gt;
-          &lt;setting type="as" name="AllowedSchemes"&gt;['https']&lt;/setting&gt;
-          &lt;setting name="ClientId"&gt;44438659992-7kgjeitenc16ssihbtdjbgguch7ju55s.apps.googleusercontent.com&lt;/setting&gt;
-          &lt;setting name="ClientSecret"&gt;-gMLuQyDiI0XrQS_vx_mhuYF&lt;/setting&gt;
-          &lt;setting type="b" name="ForceClientAuthViaRequestBody"&gt;true&lt;/setting&gt;
-        &lt;/group&gt;
-      &lt;/group&gt;
-    &lt;/group&gt;
-  &lt;/template&gt;
-&lt;/provider&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>of course, be sure and save the file - it will prompt you for your <code>sudo</code> password and save the file just fine</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_next_steps">next steps</h2>
+<h2 id="_the_simple_solution">the simple solution</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>now, go into <strong>System Settings</strong></p>
+<p>does&#8217;t work</p>
 </div>
 <div class="paragraph">
-<p>under the <strong>Networking</strong> section on the left</p>
+<p>and that would be transferring my existing <code>~/.config/fish</code> folder to Fedora</p>
 </div>
 <div class="paragraph">
-<p>select <strong>Online Accounts</strong></p>
+<p>even transferring the CashyOS config folder doesn&#8217;t work</p>
 </div>
 <div class="paragraph">
-<p>on the upper, right, click <strong>+ Add Account</strong> and choose <strong>Google</strong></p>
+<p>so what did i do?</p>
 </div>
 <div class="paragraph">
-<p>it should look like</p>
+<p>copying and pasting, mainly</p>
 </div>
-<div class="imageblock">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_solution_that_worked">the solution that worked</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>is kinda involved but well worth it imho</p>
+</div>
+<div class="paragraph">
+<p>first, let&#8217;s start with aliases</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aliases">aliases</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CachyOS has some good ones but i came up with a few of my own</p>
+</div>
+<div class="paragraph">
+<p>from my <a href="/src/how-to-configure-your-fish-prompt/alias.fish"><code>~/.config/fish/conf.d/alias.fish</code></a> file:</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<img src="/images/using-google-drive-on-archlinux-kde-plasma/Online-Accounts-Google-Login.webp" alt="Gmail login for GNOME" width="not KDE">
+<pre class="highlight"><code># Replace ls with eza
+alias la 'eza -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ll 'eza -l --color=always --group-directories-first --icons'  # long format
+alias lt 'eza -aT --color=always --group-directories-first --icons' # tree listing
+alias l. "eza -a | grep -e '^\.'"                                   # show only dotfiles
+alias lal 'eza -al --color=always --group-directories-first --icons'
+alias ls 'eza --color=always --group-directories-first --icons'
+
+# Common use
+alias psmem 'ps auxf | sort -nr -k 4'
+alias psmem10 'ps auxf | sort -nr -k 4 | head -10'
+alias .. 'cd ..'
+alias ... 'cd ../..'
+alias .... 'cd ../../..'
+alias ..... 'cd ../../../..'
+alias ...... 'cd ../../../../..'
+alias dir 'dir --color=auto'
+alias vdir 'vdir --color=auto'
+alias grep 'grep --color=auto'
+alias fgrep 'fgrep --color=auto'
+alias egrep 'egrep --color=auto'
+alias hw 'hwinfo --short'                                           # Hardware Info
+
+# Get the error messages from journalctl
+alias jctl "journalctl -p 3 -xb"
+
+# root commands
+alias dnf 'sudo dnf5'
+alias reboot 'sudo reboot'
+alias shutdown 'sudo systemctl poweroff'
+alias systemctl 'sudo systemctl'
+alias update 'sudo dnf5 --refresh update'
+alias yum 'sudo dnf5'
+
+# use vim
+alias vi vim
+# don't use the bash version of which
+alias which 'type -P'</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>notice it says GNOME and not KDE</p>
+<p><strong>WARNING</strong>: be sure you have <code>eza</code> installed as it isn&#8217;t, by default, on Fedora 42. if you don&#8217;t, your <code>ls</code> command will quit working due to the alias</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sudo dnf install eza</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>enter your Gmail account address and password on the next screens. i use Passkeys, so it&#8217;s a bit different for me, but still works</p>
+<p>finally, let&#8217;s move onto the epic CachyOS <code>fish</code> prompt</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_main_prompt">main prompt</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>this one had me racking my small, tiny brain</p>
 </div>
 <div class="paragraph">
-<p>once you&#8217;re logged in and given GNOME all the settings, Dolphin will just work, as-is</p>
+<p>but</p>
 </div>
 <div class="paragraph">
-<p>in Network, Google Drive, of course</p>
+<p>i finally figured it out</p>
 </div>
 <div class="paragraph">
-<p>and, obviously, you can pin it as well</p>
+<p>the <a href="/src/how-to-configure-your-fish-prompt/fish_prompt.fish"><code>funced fish_prompt</code></a> command lets you edit your prompt</p>
+</div>
+<div class="paragraph">
+<p>down at the very bottom of the file, i changed it to:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>if set -q VIRTUAL_ENV
+    set -f venv_name (basename "$VIRTUAL_ENV")" "
+else
+    set -f venv_name ""
+end
+
+echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
+echo -n -s $venv_name $normal $suffix " "</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>what i learned is that <code>set -q</code> queries to see if the variable is set or unset</p>
+</div>
+<div class="paragraph">
+<p>and</p>
+</div>
+<div class="paragraph">
+<p><code>set -f</code> sets the variable for the scope of the function</p>
+</div>
+<div class="paragraph">
+<p>also, in order to get the virtual environment part to work</p>
+</div>
+<div class="paragraph">
+<p>you need to add the following line to your <a href="/src/how-to-configure-your-fish-prompt/environ.fish"><code>~/.config/fish/conf.d/environ.fish</code></a> file:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>set -gx VIRTUAL_ENV_DISABLE_PROMPT true</code></pre>
+</div>
 </div>
 </div>
 </div>
@@ -195,16 +230,20 @@
 <h2 id="_conclusion">conclusion</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>yes, it&#8217;s a bit of work - but very doable</p>
+<p>i learned a lot about <code>fish</code> and got a bunch of epic aliases for my Fedora 42 OS</p>
 </div>
 <div class="paragraph">
-<p>the file, above, is also available for you to just download and use as is - it&#8217;s exactly the same as above</p>
+<p>you can also <a href="/src/how-to-configure-your-fish-prompt/fish-config.tar.xz">download</a> my <code>fish</code> configuration which has everything done for you</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>&gt; ~/.conifg/
+&gt; rm -rf fish    # unless you've already made changes
+&gt; tar Jxvf ~/Downloads/fish-config.tar.xz</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><strong>File</strong>: <a href="/src/using-google-drive-on-archlinux-kde-plasma/google.provider"><code>google.provider</code></a></p>
-</div>
-<div class="paragraph">
-<p><strong><code>md5sum</code></strong>: <code>a65ed15fb05cb710409434d5f6b87171</code></p>
+<p>thank you for reading and have a fun day!!!</p>
 </div>
 </div>
 </div></div>

@@ -15,7 +15,7 @@
         <meta name="twitter:site" content="@SarahRogue81"/>
         <meta name="twitter:creator" content="@SarahRogue81"/>
 
-    <meta name="description" content="definitive steps to get Google Drive to work under Dolphin, the KDE file manager"/>
+    <meta name="description" content="i asked ChatGPT to read my tweets and figure out what kind of Halloween monster i am. the Tarot card displayed is from Gemini"/>
         <link href="https://sarah-rogue.me/feeds/all.atom.xml"
               type="application/atom+xml"
               rel="alternate" title="Sarah's Website Atom Feed"/>
@@ -52,163 +52,100 @@
 <main class="container-fluid">
     <article class="sr-panel sr-border">
     <header class="sr-article-header sr-theme-light sr-padding">
-        <h1>Using Google Drive on Arch Linux - KDE Plasma <span class="sr-theme-light sr-float-right sr-text-small"><a href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/">permalink</a></span></h1>
+        <h1>Monster Profile <span class="sr-theme-light sr-float-right sr-text-small"><a href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/">permalink</a></span></h1>
         <div class="sr-right-align sr-text-small">by Sarah Rogue
-            on September 25, 2025</div>
+            on September 11, 2025</div>
     </header>
     <div class="sr-margin-top"><div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p><strong>NOTE</strong>: i&#8217;ve been told that problems exist with KDE, in general - not just KDE Plasma. so, if you&#8217;re having trouble getting Google Drive to work with Dolphin, these steps may just work anyway</p>
-</div>
-<div class="paragraph">
-<p>also</p>
-</div>
-<div class="paragraph">
-<p>i got this info from <a href="https://reddit.com/r/kde/">Reddit</a> but can&#8217;t find the links - sorry about that</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_initial_steps">initial steps</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>first, install kio-gdrive</p>
-</div>
-<div class="paragraph">
-<p>the following command is to install kio-gdrive on Arch Linux. i use CachyOS in particular but any <code>pacman</code> OS works</p>
-</div>
-<div class="paragraph">
-<p>obviously, you can install kio-gdrive on other GNU/Linux operating systems</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-fish" data-lang="fish">sudo pacman -S kio-gdrive</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>the problem is that simply installing kio-gdrive doesn&#8217;t work at all with KDE</p>
-</div>
-<div class="paragraph">
-<p>however</p>
-</div>
-<div class="paragraph">
-<p>it works just fine with GNOME</p>
-</div>
-<div class="paragraph">
-<p>so, before you go to System Settings, Networking, Oneline Accounts, and add Google</p>
-</div>
-<div class="paragraph">
-<p>do this first:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-fish" data-lang="fish">kate /usr/share/accounts/providers/kde/google.provider</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>delete all the contents (every line) and copy and paste this XML doc instead:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-xml" data-lang="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;provider id="google"&gt;
-  &lt;name&gt;Google&lt;/name&gt;
-
-  &lt;description&gt;GNOME-ID, Google Drive and YouTube&lt;/description&gt;
-  &lt;icon&gt;im-google&lt;/icon&gt;
-  &lt;translations&gt;kaccounts-providers&lt;/translations&gt;
-  &lt;domains&gt;.*google\.com&lt;/domains&gt;
-
-  &lt;template&gt;
-    &lt;group name="auth"&gt;
-      &lt;setting name="method"&gt;oauth2&lt;/setting&gt;
-      &lt;setting name="mechanism"&gt;web_server&lt;/setting&gt;
-      &lt;group name="oauth2"&gt;
-        &lt;group name="web_server"&gt;
-          &lt;setting name="Host"&gt;accounts.google.com&lt;/setting&gt;
-          &lt;setting name="AuthPath"&gt;o/oauth2/auth?access_type=offline&amp;amp;approval_prompt=force&lt;/setting&gt;
-          &lt;setting name="TokenPath"&gt;o/oauth2/token&lt;/setting&gt;
-          &lt;setting name="RedirectUri"&gt;http://localhost/oauth2callback&lt;/setting&gt;
-
-          &lt;setting name="ResponseType"&gt;code&lt;/setting&gt;
-          &lt;setting type="as" name="Scope"&gt;[
-              'https://www.googleapis.com/auth/userinfo.email',
-              'https://www.googleapis.com/auth/userinfo.profile',
-              'https://www.googleapis.com/auth/calendar',
-              'https://www.googleapis.com/auth/tasks',
-              'https://www.googleapis.com/auth/drive'
-          ]&lt;/setting&gt;
-          &lt;setting type="as" name="AllowedSchemes"&gt;['https']&lt;/setting&gt;
-          &lt;setting name="ClientId"&gt;44438659992-7kgjeitenc16ssihbtdjbgguch7ju55s.apps.googleusercontent.com&lt;/setting&gt;
-          &lt;setting name="ClientSecret"&gt;-gMLuQyDiI0XrQS_vx_mhuYF&lt;/setting&gt;
-          &lt;setting type="b" name="ForceClientAuthViaRequestBody"&gt;true&lt;/setting&gt;
-        &lt;/group&gt;
-      &lt;/group&gt;
-    &lt;/group&gt;
-  &lt;/template&gt;
-&lt;/provider&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>of course, be sure and save the file - it will prompt you for your <code>sudo</code> password and save the file just fine</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_next_steps">next steps</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>now, go into <strong>System Settings</strong></p>
-</div>
-<div class="paragraph">
-<p>under the <strong>Networking</strong> section on the left</p>
-</div>
-<div class="paragraph">
-<p>select <strong>Online Accounts</strong></p>
-</div>
-<div class="paragraph">
-<p>on the upper, right, click <strong>+ Add Account</strong> and choose <strong>Google</strong></p>
-</div>
-<div class="paragraph">
-<p>it should look like</p>
-</div>
 <div class="imageblock">
 <div class="content">
-<img src="/images/using-google-drive-on-archlinux-kde-plasma/Online-Accounts-Google-Login.webp" alt="Gmail login for GNOME" width="not KDE">
+<img src="/images/what-kind-of-halloween-monster-am-i/emo-tech-vampire.webp" alt="emo-ironic Tarot card of me as as Emo Tech Vampire">
 </div>
-</div>
-<div class="paragraph">
-<p>notice it says GNOME and not KDE</p>
-</div>
-<div class="paragraph">
-<p>enter your Gmail account address and password on the next screens. i use Passkeys, so it&#8217;s a bit different for me, but still works</p>
-</div>
-<div class="paragraph">
-<p>once you&#8217;re logged in and given GNOME all the settings, Dolphin will just work, as-is</p>
-</div>
-<div class="paragraph">
-<p>in Network, Google Drive, of course</p>
-</div>
-<div class="paragraph">
-<p>and, obviously, you can pin it as well</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_conclusion">conclusion</h2>
+<h2 id="_the_emo_tech_vampire">🧛🏻 The Emo Tech Vampire 🧛🏻</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>yes, it&#8217;s a bit of work - but very doable</p>
+<p><strong>Alias</strong>: The Eternal Sceptic</p>
 </div>
 <div class="paragraph">
-<p>the file, above, is also available for you to just download and use as is - it&#8217;s exactly the same as above</p>
+<p><strong>Lair</strong>: Dimly lit rooms, glowing only with the cracked screen of an iPhone 8.</p>
 </div>
 <div class="paragraph">
-<p><strong>File</strong>: <a href="/src/using-google-drive-on-archlinux-kde-plasma/google.provider"><code>google.provider</code></a></p>
+<p><strong>Alignment</strong>: Anti-hype, pro-decay.</p>
 </div>
-<div class="paragraph">
-<p><strong><code>md5sum</code></strong>: <code>a65ed15fb05cb710409434d5f6b87171</code></p>
+<div class="sect2">
+<h3 id="_appearance">Appearance:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Pale, sleepless eyes reflecting old Apple keynote streams.</p>
+</li>
+<li>
+<p>Hoodie with frayed cuffs, stained with pumpkin-spice blood.</p>
+</li>
+<li>
+<p>A necklace made of retired Lightning cables.</p>
+</li>
+<li>
+<p>Fingers forever smudged with ghostly screen-glare.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_powers">Powers:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Hype Drain</strong>: Instantly sucks the life out of tech buzzwords (“Pro Max,” “Titanium,” “AI-powered”) leaving only silence.</p>
+</li>
+<li>
+<p><strong>Shadow of Obsolescence</strong>: Thrives on outdated devices that refuse to die.</p>
+</li>
+<li>
+<p><strong>One-Word Curse</strong>: Can slay entire arguments with a single “no.”</p>
+</li>
+<li>
+<p><strong>Mirror Blackout</strong>: Keynotes and tech blogs glitch whenever you gaze upon them.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_weaknesses">Weaknesses:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Sunlight is fine, but a genuine innovation can burn like holy water.</p>
+</li>
+<li>
+<p>Tempted by nostalgia — old gadgets whisper to you from drawers.</p>
+</li>
+<li>
+<p>Haunted by the ghosts of discontinued features.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_aesthetic">Aesthetic:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Gothic refusal.</p>
+</li>
+<li>
+<p>Eternal night lit by charging cables.</p>
+</li>
+<li>
+<p>Emo poetry scrawled in Keep app drafts.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div></div>
@@ -220,23 +157,23 @@
         <div role="group" class="sr-paginator">
             <!-- First page -->
                 <a href="https://sarah-rogue.me/index.html" role="button" class="secondary sr-theme-darker"><i
-                        class="fa-solid fa-angles-left"></i> First</a>
+                        class="fa-solid fa-angles-left"></i> first</a>
 
             <!-- Previous page -->
                 <a href="https://sarah-rogue.me/index.html" role="button"
-                   class="secondary sr-theme-darker"><i class="fa-solid fa-angle-left"></i> Previous</a>
+                   class="secondary sr-theme-darker"><i class="fa-solid fa-angle-left"></i> previous</a>
 
             <!-- Page indicator -->
             <span role="button"
                   class="sr-theme-light">2 of 4</span>
 
             <!-- Next page -->
-                <a href="https://sarah-rogue.me/index3.html" role="button" class="secondary sr-theme-darker">Next
+                <a href="https://sarah-rogue.me/index3.html" role="button" class="secondary sr-theme-darker">next
                     <i class="fa-solid fa-angle-right"></i></a>
 
             <!-- Last page -->
                 <a href="https://sarah-rogue.me/index4.html" role="button"
-                   class="secondary sr-theme-darker">Last <i class="fa-solid fa-angles-right"></i></a>
+                   class="secondary sr-theme-darker">last <i class="fa-solid fa-angles-right"></i></a>
         </div>
     </nav>
 
