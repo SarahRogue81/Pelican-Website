@@ -45,7 +45,6 @@ HOSTING_PROVIDER = 'Cloudflare'
 HOSTING_PROVIDER_URL = 'https://www.cloudflare.com/'
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
 LICENSE_URL = 'https://creativecommons.org/licenses/by-nc-nd/4.0/'
-META_DESCRIPTION = f'{AUTHOR}\'s tech and gaming blog - with a little dry humour added in'
 OVERRIDE_CSS = 'styles.css'
 PLUGIN_PATHS = ['replit']
 PLUGINS = ['asciidoc_reader', 'sitemap']
