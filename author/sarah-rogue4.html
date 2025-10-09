@@ -12,12 +12,13 @@
     <meta name="robots" content="index, follow"/>
     <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@SarahRogue81"/>
-        <meta name="description" content="Sarah Rogue's tech and gaming blog - with a little dry humour added in"/>
-
         <meta name="twitter:creator" content="@SarahRogue81"/>
 
     <meta name="description" content="WinBoat is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it"/>
-    <title>Sarah's Website - Articles by Sarah Rogue</title>
+        <link href="https://sarah-rogue.me/feeds/sarah-rogue.atom.xml"
+              type="application/atom+xml"
+              rel="alternate" title="Sarah's Website Atom Feed"/>
+    <title>Sarah Rogue - Sarah's Website</title>
     <link rel="shortcut icon" href="/favicon.ico"/>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
     <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
@@ -42,6 +43,9 @@
     <a href="https://sarah-rogue.me/tags.html">
         <button class="secondary sr-theme-dark">tags</button>
     </a>
+        <a href="https://sarah-rogue.me/authors.html">
+            <button class="secondary sr-theme-dark">authors</button>
+        </a>
         <a href="https://sarah-rogue.me/pages/about-me.html">
             <button class="secondary sr-theme-dark">about me</button>
         </a>
@@ -301,6 +305,28 @@ sudo rm -rf /var/lib/docker/volumes</code></pre>
     </article>
 </main>
 
+    <!-- Navigation arrows -->
+    <nav class="container-fluid sr-text-centre">
+        <div role="group" class="sr-paginator">
+            <!-- First page -->
+                <a href="https://sarah-rogue.me/author/sarah-rogue.html" role="button" class="secondary sr-theme-darker"><i
+                        class="fa-solid fa-angles-left"></i> first</a>
+
+            <!-- Previous page -->
+                <a href="https://sarah-rogue.me/author/sarah-rogue3.html" role="button"
+                   class="secondary sr-theme-darker"><i class="fa-solid fa-angle-left"></i> previous</a>
+
+            <!-- Page indicator -->
+            <span role="button"
+                  class="sr-theme-light">4 of 4</span>
+
+            <!-- Next page -->
+                <span role="button" class="secondary" disabled>next <i class="fa-solid fa-angle-right"></i></span>
+
+            <!-- Last page -->
+                <span role="button" class="secondary" disabled>last <i class="fa-solid fa-angles-right"></i></span>
+        </div>
+    </nav>
 
 <footer class="container-fluid sr-theme-light sr-text-centre">
     copyright 2025 Sarah Rogue
