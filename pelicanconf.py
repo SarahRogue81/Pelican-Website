@@ -19,12 +19,10 @@ AUTHOR_FEED_ATOM = None
 
 DEFAULT_PAGINATION = 1
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
-
 ARTICLE_URL = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
 DEFAULT_CATEGORY = 'other'
+DISPLAY_TAGS_ON_MENU = True
 EXTRA_PATH_METADATA = {
     'images/favicons/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
     'images/favicons/android-chrome-512x512.png': {'path': 'android-chrome-512x512.png'},
