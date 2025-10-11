@@ -4,9 +4,8 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.11"
 dependencies = [
-    "asciidoc>=10.2.1",
     "ghp-import>=2.1.0",
     "invoke>=2.2.0",
-    "livereload>=2.7.1",
     "pelican>=4.11.0",
+    "pelican-sitemap>=1.2.1"
 ]
