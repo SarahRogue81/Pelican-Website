@@ -4,7 +4,6 @@ CURRENT_YEAR = datetime.now().year
 
 AUTHOR = 'Sarah Rogue'
 SITENAME = 'Sarah\'s Website'
-# SITESUBTITLE = f'Welcome to the blog of <span class="w3-tag">{AUTHOR}</span>'
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
@@ -18,11 +17,6 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 
-# Blogroll
-LINKS = (
-    ('PythonAnywhere', 'https://SarahRogue81.pythonanywhere.com/'),
-)
-
 DEFAULT_PAGINATION = 1
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -30,7 +24,6 @@ DEFAULT_PAGINATION = 1
 
 ARTICLE_URL = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
-AVATAR_MESSAGE = 'i\'m a geeky emo🖤 girl'
 DEFAULT_CATEGORY = 'other'
 EXTRA_PATH_METADATA = {
     'images/favicons/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
