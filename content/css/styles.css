@@ -84,7 +84,7 @@ footer.sr-theme-light {
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 448px) {
     .paginator .secondary {
         padding: 16px;
     }
