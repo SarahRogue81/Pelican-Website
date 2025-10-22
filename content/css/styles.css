@@ -78,7 +78,7 @@ footer.sr-theme-light {
     font-size: 0.8em;
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1112px) {
     .paginator-indicator {
         display: none;
     }
