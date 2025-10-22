@@ -42,7 +42,7 @@ PLUGIN_PATHS = ['replit']
 PLUGINS = ['asciidoc_reader', 'sitemap']
 STATIC_PATHS = ['images', 'src', 'robots.txt', 'css']
 SUMMARY_MAX_PARAGRAPHS = 1
-THEME = 'WhatsTheScoop'
+THEME = 'replit/WhatsTheScoop'
 TWITTER_USERNAME = 'SarahRogue81'
 USE_FOLDER_AS_CATEGORY = False
 
