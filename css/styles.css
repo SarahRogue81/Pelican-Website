@@ -58,6 +58,7 @@ nav a button.sr-theme-dark {
 .paginator span {
     border-radius: 25px;
     font-size: 0.8em;
+    padding: 12px;
 }
 
 nav.sr-theme-darker,
@@ -78,14 +79,8 @@ footer.sr-theme-light {
     font-size: 0.8em;
 }
 
-@media (max-width: 1112px) {
+@media (max-width: 448px) {
     .paginator-indicator {
         display: none;
-    }
-}
-
-@media (max-width: 448px) {
-    .paginator .secondary {
-        padding: 16px;
     }
 }
