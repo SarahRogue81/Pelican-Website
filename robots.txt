@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://sarah-rogue.me/sitemap.xml
