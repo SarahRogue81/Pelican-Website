@@ -36,7 +36,7 @@ sudo systemctl start docker
 sudo usermod -a -G docker username
 ```
 
-to start, i use CachyOS, an ArchLinux distro. the first line will probably be different for. to end, `username` is your user name
+to start, i use CachyOS, an ArchLinux distro. the first line will probably be different for your distro. the `username` at the end is your user name that you use to login to your Desktop Environment
 
 finally, be sure the correct Kernel Modules are running
 
@@ -55,7 +55,7 @@ sudo pacman -S appimagelauncher
 
 == then i fucked it all up
 
-when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-installation, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn't read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing caused that text to display
+when you first run WinBoat, from terminal or otherwise, it displays some sort of BIOS or UEFI. i skipped the FreeRDP step of the pre-installation, which is required for a Remote Desktop Connection. i saw the text and the logo but it went by so fast that i couldn't read it. by the time i went back to GitHub to read the README, i was convinced that, somehow, me not installing FreeRDP caused that text to display
 
 by that time, the Windows 11 installer was in the middle of downloading and i closed WinBoat thinking that the next time i opened it, it would start over
 
@@ -122,9 +122,9 @@ the next Windows update simply installed Defender antivirus signatures, which di
 
 == caveats
 
-because it is running QEMU in a default web browser, gaming isn't an option - save maybe the simple Microsoft games, like Mahjong, Minesweeper, Jigsaw, etc
+because it is running QEMU in a default web browser, gaming isn't an option - save maybe the Microsoft games, like Mahjong, Minesweeper, Jigsaw, etc
 
-pls use Steam/Proton directly on your GNU/Linux machine for gaming, even simple games
+please use Steam/Proton directly on your GNU/Linux machine for gaming, even simple games
 
 updating WinBoat to the current version involves stopping a WinBoat Windows service and deleting 16 lines at the bottom of the `~/.local/share/applications/appimagekit_*-winboat.desktop` file plus removing the old AppImage in your `~/Applications` folder
 
@@ -152,6 +152,6 @@ i've tested running games on CachyOS and the fps is the same as on my native Win
 
 so, i really have no need for Windows. sorry, Microsoft
 
-but this project is awesome and fave and *the* tech talk on https://discord.com/[Discord]
+but this project is awesome, a fave, and *the* tech talk on https://discord.com/[Discord]
 
 hope this information helps
