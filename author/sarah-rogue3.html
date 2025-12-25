@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://sarah-rogue.me" crossorigin/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link rel="canonical" href="https://sarah-rogue.me/2025/how-to-configure-your-fish-prompt/"/>
+        <link rel="canonical" href="https://sarah-rogue.me/2025/what-kind-of-halloween-monster-am-i/"/>
     <meta charset="utf-8"/>
     <base href="https://sarah-rogue.me/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
         <meta name="twitter:site" content="@SarahRogue81"/>
         <meta name="twitter:creator" content="@SarahRogue81"/>
 
-    <meta name="description" content="shows how to get the CachyOS features of the command shell fish into other GNU/Linux like Fedora 42"/>
+    <meta name="description" content="i asked ChatGPT to read my tweets and figure out what kind of Halloween monster i am. the Tarot card displayed is from Gemini"/>
     <title>Sarah Rogue - Sarah's Website</title>
     <link rel="shortcut icon" href="/favicon.ico"/>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
@@ -49,204 +49,102 @@
 <main class="container-fluid">
     <article class="sr-panel sr-border">
     <header class="sr-article-header sr-theme-light sr-padding">
-        <h1>How To Configure Your Fish Prompt <span class="sr-theme-light sr-float-right sr-text-small">
-            <a href="https://sarah-rogue.me/2025/how-to-configure-your-fish-prompt/">permalink</a></span></h1>
+        <h1>Monster Profile <span class="sr-theme-light sr-float-right sr-text-small">
+            <a href="https://sarah-rogue.me/2025/what-kind-of-halloween-monster-am-i/">permalink</a></span></h1>
         <div class="sr-right-align sr-text-small">
-            by Sarah Rogue            on 08 September, 2025
+            by Sarah Rogue            on 11 September, 2025
         </div>
     </header>
     <div class="sr-margin-top"><div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>first of all, i love the command shell <code>fish</code>!!!</p>
-</div>
-<div class="paragraph">
-<p>but</p>
-</div>
-<div class="paragraph">
-<p>i&#8217;m a complete noob when it comes to <code>fish</code> and fishing as well</p>
-</div>
-<div class="paragraph">
-<p>however</p>
-</div>
-<div class="paragraph">
-<p>i love the way <code>fish</code> is setup on <a href="https://cachyos.org/">CashyOS</a> but when i switched to <a href="https://www.fedoraproject.org/">Fedora</a> 42, i missed all of the epic CashyOS features that made <code>fish</code> even better</p>
-</div>
-<div class="paragraph">
-<p>i felt like i had to do something — something like this:</p>
-</div>
-<div class="imageblock article-icon">
+<div class="imageblock">
 <div class="content">
-<img src="/images/how-to-configure-your-fish-prompt/python-virtual-environment.webp" alt="command prompt that i want for fish">
+<img src="/images/what-kind-of-halloween-monster-am-i/emo-tech-vampire.webp" alt="emo-ironic Tarot card of me as as Emo Tech Vampire">
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_the_simple_solution">the simple solution</h2>
+<h2 id="_the_emo_tech_vampire">🧛🏻 The Emo Tech Vampire 🧛🏻</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>does&#8217;t work</p>
+<p><strong>Alias</strong>: The Eternal Sceptic</p>
 </div>
 <div class="paragraph">
-<p>and that would be transferring my existing <code>~/.config/fish</code> folder to Fedora</p>
+<p><strong>Lair</strong>: Dimly lit rooms, glowing only with the cracked screen of an iPhone 8.</p>
 </div>
 <div class="paragraph">
-<p>even transferring the CashyOS config folder doesn&#8217;t work</p>
+<p><strong>Alignment</strong>: Anti-hype, pro-decay.</p>
 </div>
-<div class="paragraph">
-<p>so what did i do?</p>
-</div>
-<div class="paragraph">
-<p>copying and pasting, mainly</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_the_solution_that_worked">the solution that worked</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>is kinda involved but well worth it imho</p>
-</div>
-<div class="paragraph">
-<p>first, let&#8217;s start with aliases</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_aliases">aliases</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>CachyOS has some good ones but i came up with a few of my own</p>
-</div>
-<div class="paragraph">
-<p>from my <a href="/src/how-to-configure-your-fish-prompt/alias.fish"><code>~/.config/fish/conf.d/alias.fish</code></a> file:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code># Replace ls with eza
-alias la 'eza -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll 'eza -l --color=always --group-directories-first --icons'  # long format
-alias lt 'eza -aT --color=always --group-directories-first --icons' # tree listing
-alias l. "eza -a | grep -e '^\.'"                                   # show only dotfiles
-alias lal 'eza -al --color=always --group-directories-first --icons'
-alias ls 'eza --color=always --group-directories-first --icons'
-
-# Common use
-alias psmem 'ps auxf | sort -nr -k 4'
-alias psmem10 'ps auxf | sort -nr -k 4 | head -10'
-alias .. 'cd ..'
-alias ... 'cd ../..'
-alias .... 'cd ../../..'
-alias ..... 'cd ../../../..'
-alias ...... 'cd ../../../../..'
-alias dir 'dir --color=auto'
-alias vdir 'vdir --color=auto'
-alias grep 'grep --color=auto'
-alias fgrep 'fgrep --color=auto'
-alias egrep 'egrep --color=auto'
-alias hw 'hwinfo --short'                                           # Hardware Info
-
-# Get the error messages from journalctl
-alias jctl "journalctl -p 3 -xb"
-
-# root commands
-alias dnf 'sudo dnf5'
-alias reboot 'sudo reboot'
-alias shutdown 'sudo systemctl poweroff'
-alias systemctl 'sudo systemctl'
-alias update 'sudo dnf5 --refresh update'
-alias yum 'sudo dnf5'
-
-# use vim
-alias vi vim
-# don't use the bash version of which
-alias which 'type -P'</code></pre>
+<div class="sect2">
+<h3 id="_appearance">Appearance:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Pale, sleepless eyes reflecting old Apple keynote streams.</p>
+</li>
+<li>
+<p>Hoodie with frayed cuffs, stained with pumpkin-spice blood.</p>
+</li>
+<li>
+<p>A necklace made of retired Lightning cables.</p>
+</li>
+<li>
+<p>Fingers forever smudged with ghostly screen-glare.</p>
+</li>
+</ul>
 </div>
 </div>
-<div class="paragraph">
-<p><strong>WARNING</strong>: be sure you have <code>eza</code> installed as it isn&#8217;t, by default, on Fedora 42. if you don&#8217;t, your <code>ls</code> command will quit working due to the alias</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>sudo dnf install eza</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>finally, let&#8217;s move onto the epic CachyOS <code>fish</code> prompt</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_main_prompt">main prompt</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>this one had me racking my small, tiny brain</p>
-</div>
-<div class="paragraph">
-<p>but</p>
-</div>
-<div class="paragraph">
-<p>i finally figured it out</p>
-</div>
-<div class="paragraph">
-<p>the <a href="/src/how-to-configure-your-fish-prompt/fish_prompt.fish"><code>funced fish_prompt</code></a> command lets you edit your prompt</p>
-</div>
-<div class="paragraph">
-<p>down at the very bottom of the file, i changed it to:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>if set -q VIRTUAL_ENV
-    set -f venv_name (basename "$VIRTUAL_ENV")" "
-else
-    set -f venv_name ""
-end
-
-echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
-echo -n -s $venv_name $normal $suffix " "</code></pre>
+<div class="sect2">
+<h3 id="_powers">Powers:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Hype Drain</strong>: Instantly sucks the life out of tech buzzwords (“Pro Max,” “Titanium,” “AI-powered”) leaving only silence.</p>
+</li>
+<li>
+<p><strong>Shadow of Obsolescence</strong>: Thrives on outdated devices that refuse to die.</p>
+</li>
+<li>
+<p><strong>One-Word Curse</strong>: Can slay entire arguments with a single “no.”</p>
+</li>
+<li>
+<p><strong>Mirror Blackout</strong>: Keynotes and tech blogs glitch whenever you gaze upon them.</p>
+</li>
+</ul>
 </div>
 </div>
-<div class="paragraph">
-<p>what i learned is that <code>set -q</code> queries to see if the variable is set or unset</p>
-</div>
-<div class="paragraph">
-<p>and</p>
-</div>
-<div class="paragraph">
-<p><code>set -f</code> sets the variable for the scope of the function</p>
-</div>
-<div class="paragraph">
-<p>also, in order to get the virtual environment part to work</p>
-</div>
-<div class="paragraph">
-<p>you need to add the following line to your <a href="/src/how-to-configure-your-fish-prompt/environ.fish"><code>~/.config/fish/conf.d/environ.fish</code></a> file:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>set -gx VIRTUAL_ENV_DISABLE_PROMPT true</code></pre>
+<div class="sect2">
+<h3 id="_weaknesses">Weaknesses:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Sunlight is fine, but a genuine innovation can burn like holy water.</p>
+</li>
+<li>
+<p>Tempted by nostalgia — old gadgets whisper to you from drawers.</p>
+</li>
+<li>
+<p>Haunted by the ghosts of discontinued features.</p>
+</li>
+</ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_aesthetic">Aesthetic:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Gothic refusal.</p>
+</li>
+<li>
+<p>Eternal night lit by charging cables.</p>
+</li>
+<li>
+<p>Emo poetry scrawled in Keep app drafts.</p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_conclusion">conclusion</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>i learned a lot about <code>fish</code> and got a bunch of epic aliases for my Fedora 42 OS</p>
-</div>
-<div class="paragraph">
-<p>you can also <a href="/src/how-to-configure-your-fish-prompt/fish-config.tar.xz">download</a> my <code>fish</code> configuration which has everything done for you</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>&gt; ~/.conifg/
-&gt; rm -rf fish    # unless you've already made changes
-&gt; tar Jxvf ~/Downloads/fish-config.tar.xz</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>thank you for reading and have a fun day!!!</p>
 </div>
 </div>
 </div></div>
@@ -266,14 +164,14 @@ echo -n -s $venv_name $normal $suffix " "</code></pre>
 
             <!-- Page indicator -->
             <span role="button"
-                  class="paginator-indicator sr-theme-light">3 of 4
+                  class="paginator-indicator sr-theme-light">3 of 5
             </span>
 
             <!-- Next page -->
                 <a href="https://sarah-rogue.me/author/sarah-rogue4.html" role="button" class="secondary sr-theme-darker"><i class="fa-solid fa-angle-right"></i></a>
 
             <!-- Last page -->
-                <a href="https://sarah-rogue.me/author/sarah-rogue4.html" role="button" class="secondary sr-theme-darker"><i class="fa-solid fa-angles-right"></i></a>
+                <a href="https://sarah-rogue.me/author/sarah-rogue5.html" role="button" class="secondary sr-theme-darker"><i class="fa-solid fa-angles-right"></i></a>
         </div>
     </nav>
 
