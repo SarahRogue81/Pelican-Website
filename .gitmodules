@@ -1,15 +1,15 @@
 [submodule "replit/W3.CSS-Template4Pelican"]
 	path = replit/W3.CSS-Template4Pelican
 	url = git@github.com:SarahRogue81/W3.CSS-Template4Pelican.git
-[submodule "replit/asciidoc_reader"]
-	path = replit/asciidoc_reader
-	url = git@github.com:SarahRogue81/asciidoc_reader.git
 [submodule "replit/W3.CSS-Template4Pelican.wiki"]
 	path = replit/W3.CSS-Template4Pelican.wiki
 	url = git@github.com:SarahRogue81/W3.CSS-Template4Pelican.wiki.git
 [submodule "replit/WhatsTheScoop"]
 	path = replit/WhatsTheScoop
-	url = git@github.com:SarahRogue81/WhatsTheScoop.git
+	url = git@github.com:SarahRogue81/WhatsTheScoop
 [submodule "replit/WhatsTheScoop.wiki"]
 	path = replit/WhatsTheScoop.wiki
 	url = git@github.com:SarahRogue81/WhatsTheScoop.wiki.git
+[submodule "replit/asciidoc_reader"]
+	path = replit/asciidoc_reader
+	url = git@github.com:SarahRogue81/asciidoc_reader.git
