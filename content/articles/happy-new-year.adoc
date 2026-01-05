@@ -1,0 +1,13 @@
+= Happy New Year
+
+:date: 01-01-2026 00:00:00
+:summary: Happy New Year!!!
+
+[sr-text-centre sr-xxxlarge]
+--
+🎈 🎉 🥳 🎈
+
+Happy New Year!!!
+
+🎈 🎉 🥳 🎈
+--
