@@ -138,7 +138,7 @@ i learned a lot about `fish` and got a bunch of epic aliases for my Fedora 42 OS
 you can also link:/src/how-to-configure-your-fish-prompt/fish-config.tar.xz[download] my `fish` configuration which has everything done for you
 
 ```
-> ~/.conifg/
+> ~/.config/
 > rm -rf fish    # unless you've already made changes
 > tar Jxvf ~/Downloads/fish-config.tar.xz
 ```
