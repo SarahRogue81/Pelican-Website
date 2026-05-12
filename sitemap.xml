@@ -6,14 +6,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://sarah-rogue.me/</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/2025/how-to-configure-your-fish-prompt/</loc>
-<lastmod>2025-09-08T23:04:00-04:00</lastmod>
+<lastmod>2025-08-09T00:00:00-04:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -27,21 +27,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/</loc>
-<lastmod>2025-09-25T01:56:00-04:00</lastmod>
+<lastmod>2025-09-25T00:00:00-04:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/2025/what-kind-of-halloween-monster-am-i/</loc>
-<lastmod>2025-09-11T12:25:00-04:00</lastmod>
+<lastmod>2025-09-11T00:00:00-04:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/2025/winboat-for-gnulinux/</loc>
-<lastmod>2025-09-04T01:07:00-04:00</lastmod>
+<lastmod>2025-09-04T00:00:00-04:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -54,141 +54,169 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://sarah-rogue.me/2026/mask-gangles-song-feat-marissa-lenti/</loc>
+<lastmod>2026-05-12T00:00:00-04:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://sarah-rogue.me/archives.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/author/sarah-rogue.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/author/sarah-rogue2.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/author/sarah-rogue3.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/author/sarah-rogue4.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/author/sarah-rogue5.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/author/sarah-rogue6.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://sarah-rogue.me/author/sarah-rogue7.html</loc>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/authors.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/categories.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/category/gnulinux.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/category/gnulinux2.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/category/gnulinux3.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/category/humour.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/category/other.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/category/other2.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://sarah-rogue.me/category/other3.html</loc>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/index2.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/index3.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/index4.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/index5.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/index6.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://sarah-rogue.me/index7.html</loc>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -202,70 +230,70 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://sarah-rogue.me/tag/archlinux.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/cachyos.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/cachyos2.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/dolphin.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/fedora.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/fish.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/kde-plasma.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/winboat.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tag/windows.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://sarah-rogue.me/tags.html</loc>
-<lastmod>2026-01-05T20:05:37-00:00</lastmod>
+<lastmod>2026-05-12T12:00:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

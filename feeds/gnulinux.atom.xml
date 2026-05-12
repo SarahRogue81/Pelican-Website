@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Sarah's Website - GNU/Linux</title><link href="https://sarah-rogue.me/" rel="alternate"/><link href="https://sarah-rogue.me/feeds/gnulinux.atom.xml" rel="self"/><id>https://sarah-rogue.me/</id><updated>2025-09-25T01:56:00-04:00</updated><entry><title>Using Google Drive on Arch Linux - KDE Plasma</title><link href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/" rel="alternate"/><published>2025-09-25T01:56:00-04:00</published><updated>2025-09-25T01:56:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-25:/2025/using-google-drive-on-arch-linux-kde-plasma/</id><summary type="html">definitive steps to get Google Drive to work under Dolphin, the KDE file manager</summary><content type="html">&lt;div id="preamble"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Sarah's Website - GNU/Linux</title><link href="https://sarah-rogue.me/" rel="alternate"/><link href="https://sarah-rogue.me/feeds/gnulinux.atom.xml" rel="self"/><id>https://sarah-rogue.me/</id><updated>2025-09-25T00:00:00-04:00</updated><entry><title>Using Google Drive on Arch Linux - KDE Plasma</title><link href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/" rel="alternate"/><published>2025-09-25T00:00:00-04:00</published><updated>2025-09-25T00:00:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-25:/2025/using-google-drive-on-arch-linux-kde-plasma/</id><summary type="html">definitive steps to get Google Drive to work under Dolphin, the KDE file manager</summary><content type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: i&amp;#8217;ve been told that problems exist with KDE, in general - not just KDE Plasma. so, if you&amp;#8217;re having trouble getting Google Drive to work with Dolphin, these steps may just work anyway&lt;/p&gt;
@@ -154,201 +154,7 @@
 &lt;p&gt;&lt;strong&gt;&lt;code&gt;md5sum&lt;/code&gt;&lt;/strong&gt;: &lt;code&gt;a65ed15fb05cb710409434d5f6b87171&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><category term="GNU/Linux"/><category term="CachyOS"/><category term="Archlinux"/><category term="KDE Plasma"/><category term="Dolphin"/></entry><entry><title>How To Configure Your Fish Prompt</title><link href="https://sarah-rogue.me/2025/how-to-configure-your-fish-prompt/" rel="alternate"/><published>2025-09-08T23:04:00-04:00</published><updated>2025-09-08T23:04:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-08:/2025/how-to-configure-your-fish-prompt/</id><summary type="html">shows how to get the CachyOS features of the command shell fish into other GNU/Linux like Fedora 42</summary><content type="html">&lt;div id="preamble"&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;first of all, i love the command shell &lt;code&gt;fish&lt;/code&gt;!!!&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;but&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;i&amp;#8217;m a complete noob when it comes to &lt;code&gt;fish&lt;/code&gt; and fishing as well&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;however&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;i love the way &lt;code&gt;fish&lt;/code&gt; is setup on &lt;a href="https://cachyos.org/"&gt;CashyOS&lt;/a&gt; but when i switched to &lt;a href="https://www.fedoraproject.org/"&gt;Fedora&lt;/a&gt; 42, i missed all of the epic CashyOS features that made &lt;code&gt;fish&lt;/code&gt; even better&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;i felt like i had to do something — something like this:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="imageblock article-icon"&gt;
-&lt;div class="content"&gt;
-&lt;img src="/images/how-to-configure-your-fish-prompt/python-virtual-environment.webp" alt="command prompt that i want for fish"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="_the_simple_solution"&gt;the simple solution&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;does&amp;#8217;t work&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;and that would be transferring my existing &lt;code&gt;~/.config/fish&lt;/code&gt; folder to Fedora&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;even transferring the CashyOS config folder doesn&amp;#8217;t work&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;so what did i do?&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;copying and pasting, mainly&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="_the_solution_that_worked"&gt;the solution that worked&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;is kinda involved but well worth it imho&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;first, let&amp;#8217;s start with aliases&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="_aliases"&gt;aliases&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;CachyOS has some good ones but i came up with a few of my own&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;from my &lt;a href="/src/how-to-configure-your-fish-prompt/alias.fish"&gt;&lt;code&gt;~/.config/fish/conf.d/alias.fish&lt;/code&gt;&lt;/a&gt; file:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;# Replace ls with eza
-alias la 'eza -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll 'eza -l --color=always --group-directories-first --icons'  # long format
-alias lt 'eza -aT --color=always --group-directories-first --icons' # tree listing
-alias l. "eza -a | grep -e '^\.'"                                   # show only dotfiles
-alias lal 'eza -al --color=always --group-directories-first --icons'
-alias ls 'eza --color=always --group-directories-first --icons'
-
-# Common use
-alias psmem 'ps auxf | sort -nr -k 4'
-alias psmem10 'ps auxf | sort -nr -k 4 | head -10'
-alias .. 'cd ..'
-alias ... 'cd ../..'
-alias .... 'cd ../../..'
-alias ..... 'cd ../../../..'
-alias ...... 'cd ../../../../..'
-alias dir 'dir --color=auto'
-alias vdir 'vdir --color=auto'
-alias grep 'grep --color=auto'
-alias fgrep 'fgrep --color=auto'
-alias egrep 'egrep --color=auto'
-alias hw 'hwinfo --short'                                           # Hardware Info
-
-# Get the error messages from journalctl
-alias jctl "journalctl -p 3 -xb"
-
-# root commands
-alias dnf 'sudo dnf5'
-alias reboot 'sudo reboot'
-alias shutdown 'sudo systemctl poweroff'
-alias systemctl 'sudo systemctl'
-alias update 'sudo dnf5 --refresh update'
-alias yum 'sudo dnf5'
-
-# use vim
-alias vi vim
-# don't use the bash version of which
-alias which 'type -P'&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: be sure you have &lt;code&gt;eza&lt;/code&gt; installed as it isn&amp;#8217;t, by default, on Fedora 42. if you don&amp;#8217;t, your &lt;code&gt;ls&lt;/code&gt; command will quit working due to the alias&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;sudo dnf install eza&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;finally, let&amp;#8217;s move onto the epic CachyOS &lt;code&gt;fish&lt;/code&gt; prompt&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="_main_prompt"&gt;main prompt&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;this one had me racking my small, tiny brain&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;but&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;i finally figured it out&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;the &lt;a href="/src/how-to-configure-your-fish-prompt/fish_prompt.fish"&gt;&lt;code&gt;funced fish_prompt&lt;/code&gt;&lt;/a&gt; command lets you edit your prompt&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;down at the very bottom of the file, i changed it to:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;if set -q VIRTUAL_ENV
-    set -f venv_name (basename "$VIRTUAL_ENV")" "
-else
-    set -f venv_name ""
-end
-
-echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
-echo -n -s $venv_name $normal $suffix " "&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;what i learned is that &lt;code&gt;set -q&lt;/code&gt; queries to see if the variable is set or unset&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;and&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;code&gt;set -f&lt;/code&gt; sets the variable for the scope of the function&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;also, in order to get the virtual environment part to work&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;you need to add the following line to your &lt;a href="/src/how-to-configure-your-fish-prompt/environ.fish"&gt;&lt;code&gt;~/.config/fish/conf.d/environ.fish&lt;/code&gt;&lt;/a&gt; file:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;set -gx VIRTUAL_ENV_DISABLE_PROMPT true&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="_conclusion"&gt;conclusion&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;i learned a lot about &lt;code&gt;fish&lt;/code&gt; and got a bunch of epic aliases for my Fedora 42 OS&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;you can also &lt;a href="/src/how-to-configure-your-fish-prompt/fish-config.tar.xz"&gt;download&lt;/a&gt; my &lt;code&gt;fish&lt;/code&gt; configuration which has everything done for you&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="highlight"&gt;&lt;code&gt;&amp;gt; ~/.conifg/
-&amp;gt; rm -rf fish    # unless you've already made changes
-&amp;gt; tar Jxvf ~/Downloads/fish-config.tar.xz&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;thank you for reading and have a fun day!!!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content><category term="GNU/Linux"/><category term="CachyOS"/><category term="Fedora"/><category term="fish"/></entry><entry><title>WinBoat for GNU/Linux</title><link href="https://sarah-rogue.me/2025/winboat-for-gnulinux/" rel="alternate"/><published>2025-09-04T01:07:00-04:00</published><updated>2025-09-04T01:07:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-04:/2025/winboat-for-gnulinux/</id><summary type="html">&lt;p&gt;&lt;a href="https://www.winboat.app/"&gt;WinBoat&lt;/a&gt; is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it&lt;/p&gt;</summary><content type="html">&lt;div id="preamble"&gt;
+&lt;/div&gt;</content><category term="GNU/Linux"/><category term="CachyOS"/><category term="Archlinux"/><category term="KDE Plasma"/><category term="Dolphin"/></entry><entry><title>WinBoat for GNU/Linux</title><link href="https://sarah-rogue.me/2025/winboat-for-gnulinux/" rel="alternate"/><published>2025-09-04T00:00:00-04:00</published><updated>2025-09-04T00:00:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-04:/2025/winboat-for-gnulinux/</id><summary type="html">&lt;p&gt;&lt;a href="https://www.winboat.app/"&gt;WinBoat&lt;/a&gt; is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it&lt;/p&gt;</summary><content type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="https://www.winboat.app/"&gt;WinBoat&lt;/a&gt; is a GNU/Linux app that runs various versions of Windows. i fucked up the first time installing it and had a bitch of a time uninstalling it&lt;/p&gt;
@@ -589,4 +395,198 @@ sudo rm -rf /var/lib/docker/volumes&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;hope this information helps&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><category term="GNU/Linux"/><category term="WinBoat"/><category term="Windows"/></entry></feed>
+&lt;/div&gt;</content><category term="GNU/Linux"/><category term="WinBoat"/><category term="Windows"/></entry><entry><title>How To Configure Your Fish Prompt</title><link href="https://sarah-rogue.me/2025/how-to-configure-your-fish-prompt/" rel="alternate"/><published>2025-08-09T00:00:00-04:00</published><updated>2025-08-09T00:00:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-08-09:/2025/how-to-configure-your-fish-prompt/</id><summary type="html">shows how to get the CachyOS features of the command shell fish into other GNU/Linux like Fedora 42</summary><content type="html">&lt;div id="preamble"&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;first of all, i love the command shell &lt;code&gt;fish&lt;/code&gt;!!!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;but&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;i&amp;#8217;m a complete noob when it comes to &lt;code&gt;fish&lt;/code&gt; and fishing as well&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;however&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;i love the way &lt;code&gt;fish&lt;/code&gt; is setup on &lt;a href="https://cachyos.org/"&gt;CashyOS&lt;/a&gt; but when i switched to &lt;a href="https://www.fedoraproject.org/"&gt;Fedora&lt;/a&gt; 42, i missed all of the epic CashyOS features that made &lt;code&gt;fish&lt;/code&gt; even better&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;i felt like i had to do something — something like this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="imageblock article-icon"&gt;
+&lt;div class="content"&gt;
+&lt;img src="/images/how-to-configure-your-fish-prompt/python-virtual-environment.webp" alt="command prompt that i want for fish"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_the_simple_solution"&gt;the simple solution&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;does&amp;#8217;t work&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;and that would be transferring my existing &lt;code&gt;~/.config/fish&lt;/code&gt; folder to Fedora&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;even transferring the CashyOS config folder doesn&amp;#8217;t work&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;so what did i do?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;copying and pasting, mainly&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_the_solution_that_worked"&gt;the solution that worked&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;is kinda involved but well worth it imho&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;first, let&amp;#8217;s start with aliases&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_aliases"&gt;aliases&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;CachyOS has some good ones but i came up with a few of my own&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;from my &lt;a href="/src/how-to-configure-your-fish-prompt/alias.fish"&gt;&lt;code&gt;~/.config/fish/conf.d/alias.fish&lt;/code&gt;&lt;/a&gt; file:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;# Replace ls with eza
+alias la 'eza -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ll 'eza -l --color=always --group-directories-first --icons'  # long format
+alias lt 'eza -aT --color=always --group-directories-first --icons' # tree listing
+alias l. "eza -a | grep -e '^\.'"                                   # show only dotfiles
+alias lal 'eza -al --color=always --group-directories-first --icons'
+alias ls 'eza --color=always --group-directories-first --icons'
+
+# Common use
+alias psmem 'ps auxf | sort -nr -k 4'
+alias psmem10 'ps auxf | sort -nr -k 4 | head -10'
+alias .. 'cd ..'
+alias ... 'cd ../..'
+alias .... 'cd ../../..'
+alias ..... 'cd ../../../..'
+alias ...... 'cd ../../../../..'
+alias dir 'dir --color=auto'
+alias vdir 'vdir --color=auto'
+alias grep 'grep --color=auto'
+alias fgrep 'fgrep --color=auto'
+alias egrep 'egrep --color=auto'
+alias hw 'hwinfo --short'                                           # Hardware Info
+
+# Get the error messages from journalctl
+alias jctl "journalctl -p 3 -xb"
+
+# root commands
+alias dnf 'sudo dnf5'
+alias reboot 'sudo reboot'
+alias shutdown 'sudo systemctl poweroff'
+alias systemctl 'sudo systemctl'
+alias update 'sudo dnf5 --refresh update'
+alias yum 'sudo dnf5'
+
+# use vim
+alias vi vim
+# don't use the bash version of which
+alias which 'type -P'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: be sure you have &lt;code&gt;eza&lt;/code&gt; installed as it isn&amp;#8217;t, by default, on Fedora 42. if you don&amp;#8217;t, your &lt;code&gt;ls&lt;/code&gt; command will quit working due to the alias&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;sudo dnf install eza&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;finally, let&amp;#8217;s move onto the epic CachyOS &lt;code&gt;fish&lt;/code&gt; prompt&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_main_prompt"&gt;main prompt&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;this one had me racking my small, tiny brain&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;but&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;i finally figured it out&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;the &lt;a href="/src/how-to-configure-your-fish-prompt/fish_prompt.fish"&gt;&lt;code&gt;funced fish_prompt&lt;/code&gt;&lt;/a&gt; command lets you edit your prompt&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;down at the very bottom of the file, i changed it to:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;if set -q VIRTUAL_ENV
+    set -f venv_name (basename "$VIRTUAL_ENV")" "
+else
+    set -f venv_name ""
+end
+
+echo -s \n (set_color red) (prompt_pwd -d 70) (set_color brblack) (echo (fish_vcs_prompt) | sed 's/[()]//g')
+echo -n -s $venv_name $normal $suffix " "&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;what i learned is that &lt;code&gt;set -q&lt;/code&gt; queries to see if the variable is set or unset&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;code&gt;set -f&lt;/code&gt; sets the variable for the scope of the function&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;also, in order to get the virtual environment part to work&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;you need to add the following line to your &lt;a href="/src/how-to-configure-your-fish-prompt/environ.fish"&gt;&lt;code&gt;~/.config/fish/conf.d/environ.fish&lt;/code&gt;&lt;/a&gt; file:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;set -gx VIRTUAL_ENV_DISABLE_PROMPT true&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_conclusion"&gt;conclusion&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;i learned a lot about &lt;code&gt;fish&lt;/code&gt; and got a bunch of epic aliases for my Fedora 42 OS&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;you can also &lt;a href="/src/how-to-configure-your-fish-prompt/fish-config.tar.xz"&gt;download&lt;/a&gt; my &lt;code&gt;fish&lt;/code&gt; configuration which has everything done for you&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="highlight"&gt;&lt;code&gt;&amp;gt; ~/.config/
+&amp;gt; rm -rf fish    # unless you've already made changes
+&amp;gt; tar Jxvf ~/Downloads/fish-config.tar.xz&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;thank you for reading and have a fun day!!!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><category term="GNU/Linux"/><category term="CachyOS"/><category term="Fedora"/><category term="fish"/></entry></feed>
