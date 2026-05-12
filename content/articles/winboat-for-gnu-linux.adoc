@@ -1,7 +1,7 @@
 = WinBoat for GNU/Linux
 
 :category: GNU/Linux
-:date: 2025-09-04 01:07
+:date: 2025-09-04
 :imagesdir: /images/winboat-for-gnu-linux
 :tags: WinBoat, Windows
 

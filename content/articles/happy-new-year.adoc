@@ -1,6 +1,6 @@
 = Happy New Year
 
-:date: 01-01-2026 00:00:00
+:date: 2026-01-01
 :summary: Happy New Year!!!
 
 [sr-text-centre sr-xxxlarge]
