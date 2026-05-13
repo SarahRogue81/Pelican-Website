@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Sarah's Website</title><link href="https://sarah-rogue.me/" rel="alternate"/><link href="https://sarah-rogue.me/feeds/all-en-gb.atom.xml" rel="self"/><id>https://sarah-rogue.me/</id><updated>2026-05-12T00:00:00-04:00</updated><entry><title>Mask (Gangle's Song) (feat. Marissa Lenti)</title><link href="https://sarah-rogue.me/2026/mask-gangles-song-feat-marissa-lenti/" rel="alternate"/><published>2026-05-12T00:00:00-04:00</published><updated>2026-05-12T00:00:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2026-05-12:/2026/mask-gangles-song-feat-marissa-lenti/</id><summary type="html"/><content type="html">&lt;div id="preamble"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Sarah's Website</title><link href="https://sarah-rogue.me/" rel="alternate"/><link href="https://sarah-rogue.me/feeds/all-en-gb.atom.xml" rel="self"/><id>https://sarah-rogue.me/</id><updated>2026-05-12T00:00:00-04:00</updated><entry><title>Mask (Gangle's Song) (feat. Marissa Lenti)</title><link href="https://sarah-rogue.me/2026/mask-gangles-song-feat-marissa-lenti/" rel="alternate"/><published>2026-05-12T00:00:00-04:00</published><updated>2026-05-12T00:00:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2026-05-12:/2026/mask-gangles-song-feat-marissa-lenti/</id><summary type="html">Gangle's song from YouTube</summary><content type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="listingblock"&gt;
 &lt;div class="content"&gt;
@@ -217,7 +217,7 @@ i work it out&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;🎈 🎉 🥳 🎈&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><category term="other"/></entry><entry><title>it's Christmas time!</title><link href="https://sarah-rogue.me/2025/its-christmas-time/" rel="alternate"/><published>2025-12-25T00:00:00-05:00</published><updated>2025-12-25T00:00:00-05:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-12-25:/2025/its-christmas-time/</id><summary type="html">Merry Christmas!!!</summary><content type="html">&lt;div class="openblock sr-text-centre sr-xxxlarge"&gt;
+&lt;/div&gt;</content><category term="holiday"/></entry><entry><title>it's Christmas time!</title><link href="https://sarah-rogue.me/2025/its-christmas-time/" rel="alternate"/><published>2025-12-25T00:00:00-05:00</published><updated>2025-12-25T00:00:00-05:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-12-25:/2025/its-christmas-time/</id><summary type="html">Merry Christmas!!!</summary><content type="html">&lt;div class="openblock sr-text-centre sr-xxxlarge"&gt;
 &lt;div class="content"&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;🎄 🎁 🎄&lt;/p&gt;
@@ -232,7 +232,7 @@ i work it out&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;🎄 🎁 🎄&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content><category term="other"/></entry><entry><title>Using Google Drive on Arch Linux - KDE Plasma</title><link href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/" rel="alternate"/><published>2025-09-25T00:00:00-04:00</published><updated>2025-09-25T00:00:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-25:/2025/using-google-drive-on-arch-linux-kde-plasma/</id><summary type="html">definitive steps to get Google Drive to work under Dolphin, the KDE file manager</summary><content type="html">&lt;div id="preamble"&gt;
+&lt;/div&gt;</content><category term="holiday"/></entry><entry><title>Using Google Drive on Arch Linux - KDE Plasma</title><link href="https://sarah-rogue.me/2025/using-google-drive-on-arch-linux-kde-plasma/" rel="alternate"/><published>2025-09-25T00:00:00-04:00</published><updated>2025-09-25T00:00:00-04:00</updated><author><name>Sarah Rogue</name></author><id>tag:sarah-rogue.me,2025-09-25:/2025/using-google-drive-on-arch-linux-kde-plasma/</id><summary type="html">definitive steps to get Google Drive to work under Dolphin, the KDE file manager</summary><content type="html">&lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: i&amp;#8217;ve been told that problems exist with KDE, in general - not just KDE Plasma. so, if you&amp;#8217;re having trouble getting Google Drive to work with Dolphin, these steps may just work anyway&lt;/p&gt;
