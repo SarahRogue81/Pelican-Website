@@ -1,4 +1,8 @@
+import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv()  # This loads variables from .env into os.environ
 
 CURRENT_YEAR = datetime.now().year
 
@@ -31,7 +35,7 @@ EXTRA_PATH_METADATA = {
     'images/favicons/favicon.svg': {'path': 'favicon.svg'},
     'images/favicons/manifest.json': {'path': 'manifest.json'},
 }
-FONT_AWESOME = 9208356911
+FONT_AWESOME = os.getenv('FONT_AWESOME')
 HOSTING_PROVIDER = 'Cloudflare'
 HOSTING_PROVIDER_URL = 'https://www.cloudflare.com/'
 LICENSE = 'Attribution-NonCommercial-NoDerivatives 4.0 International'
@@ -42,7 +46,7 @@ PLUGINS = ['asciidoc_reader', 'sitemap']
 STATIC_PATHS = ['images', 'src', 'robots.txt', 'css']
 SUMMARY_MAX_PARAGRAPHS = 1
 THEME = 'replit/WhatsTheScoop'
-TWITTER_USERNAME = 'SarahRogue81'
+TWITTER_USERNAME = os.getenv('TWITTER_USERNAME')
 USE_FOLDER_AS_CATEGORY = False
 
 # for sitemap plugin
