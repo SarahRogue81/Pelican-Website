@@ -16,10 +16,7 @@
         <meta name="twitter:creator" content="@SarahRogue81"/>
 
     <meta name="description" content=""/>
-        <link href="https://sarah-rogue.me/feeds/humour.atom.xml"
-              type="application/atom+xml"
-              rel="alternate" title="Sarah's Website Atom Feed"/>
-    <title>Sarah's Website</title>
+    <title>The Amazing Digital Circus - Sarah's Website</title>
     <link rel="shortcut icon" href="/favicon.ico"/>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
     <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
@@ -51,8 +48,9 @@
 
 <main class="container-fluid">
     <article class="sr-panel sr-border">
-    <header class="sr-theme-light sr-padding">
-        <h1>Mask (Gangle's Song) (feat. Marissa Lenti)</h1>
+    <header class="sr-article-header sr-theme-light sr-padding">
+        <h1>Mask (Gangle's Song) (feat. Marissa Lenti) <span class="sr-theme-light sr-float-right sr-text-small">
+            <a href="https://sarah-rogue.me/2026/mask-gangles-song-feat-marissa-lenti/">permalink</a></span></h1>
         <div class="sr-right-align sr-text-small">
             by Sarah Rogue            on 12 May, 2026
         </div>
@@ -267,25 +265,28 @@ i work it out</code></pre>
     </article>
 </main>
 
+    <!-- Navigation arrows -->
+    <nav class="container-fluid sr-text-centre">
+        <div role="group" class="paginator">
+            <!-- First page -->
+                <span role="button" class="secondary" disabled><i class="fa-solid fa-angles-left"></i></span>
 
-    <div class="container-fluid">
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function () {
-                this.page.url = "https://sarah-rogue.me/2026/mask-gangles-song-feat-marissa-lenti/";
-                this.page.identifier = "mask-gangles-song-feat-marissa-lenti";
-            };
-            (function () {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://sarahs-website.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
-        </noscript>
-    </div>
+            <!-- Previous page -->
+                <span role="button" class="secondary" disabled><i class="fa-solid fa-angle-left"></i></span>
+
+            <!-- Page indicator -->
+            <span role="button"
+                  class="paginator-indicator sr-theme-light">1 of 1
+            </span>
+
+            <!-- Next page -->
+                <span role="button" class="secondary" disabled><i class="fa-solid fa-angle-right"></i></span>
+
+            <!-- Last page -->
+                <span role="button" class="secondary" disabled><i class="fa-solid fa-angles-right"></i></span>
+        </div>
+    </nav>
+
 
 <footer class="container-fluid sr-theme-light sr-text-centre">
     copyright 2026 Sarah Rogue
