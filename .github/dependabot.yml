@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly" # Less frequent checks = less noise
+    ignore:
+      - dependency-name: "tornado"
+      - dependency-name: "Pygments"
