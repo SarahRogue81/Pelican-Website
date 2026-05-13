@@ -9,4 +9,5 @@ dependencies = [
     "livereload>=2.7.1",
     "pelican>=4.11.0",
     "pelican-sitemap>=1.2.1",
+    "python-dotenv>=1.2.2",
 ]
