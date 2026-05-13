@@ -2,6 +2,8 @@
 
 :date: 2026-05-12
 :description: Gangle's song from YouTube
+:category: humour
+:tags: The Amazing Digital Circus
 
 [source, text]
 feel a little bit crazy lately
