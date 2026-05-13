@@ -3,9 +3,12 @@
 
 import os
 import sys
+from dotenv import load_dotenv
 
 sys.path.append(os.curdir)
 from pelicanconf import *
+
+load_dotenv()  # This loads variables from .env into os.environ
 
 # uncomment to allow robots to index and follow
 ROBOTS_CONTENT = 'index, follow'
@@ -20,3 +23,5 @@ AUTHOR_FEED_RSS = None
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
+
+DISQUS=os.getenv('DISQUS')
