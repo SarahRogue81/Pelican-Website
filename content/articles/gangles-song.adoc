@@ -1,8 +1,8 @@
 = Mask (Gangle's Song) (feat. Marissa Lenti)
 
-:date: 2026-05-12
-:description: Gangle's song from YouTube
 :category: humour
+:date: 2026-05-12
+:summary: Gangle's song from YouTube
 :tags: The Amazing Digital Circus
 
 [source, text]
