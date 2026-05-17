@@ -1,7 +1,7 @@
 = Mask (Gangle's Song) (feat. Marissa Lenti)
 
 :category: humour
-:date: 2026-05-12
+:date: 2026-05-17
 :summary: Gangle's song from YouTube
 :tags: The Amazing Digital Circus
 
@@ -28,8 +28,8 @@ what is real real real
 [source, text]
 and so when i feel down
 and all my thoughts spin round
-i work it out out out
-i work it out
+i block it out out out
+i block it out
 
 [source, text]
 and i mask mask mask
@@ -40,8 +40,8 @@ what is real real real
 [source, text]
 and so when i feel down
 and all my thoughts spin round
-i work it out out out
-i work it out
+i block it out out out
+i block it out
 
 [source, text]
 people tell me i have a problem
@@ -66,8 +66,8 @@ what is real real real
 [source, text]
 and so when i feel down
 and all my thoughts spin round
-i work it out out out
-i work it out
+i block it out out out
+i block it out
 
 [source, text]
 and i mask mask mask
@@ -78,8 +78,8 @@ what is real real real
 [source, text]
 and so when i feel down
 and all my thoughts spin round
-i work it out out out
-i work it out
+i block it out out out
+i block it out
 
 == wanna take your mask away
 [source, text]
@@ -90,7 +90,7 @@ it's okay
 [source, text]
 i feel it in a silly way
 
-== bi-bi-polarity
+== bi-bi-po-polarity
 [source, text]
 and it looks so good on me
 
@@ -108,7 +108,7 @@ i want you to see
 the hidden part of me
 should i take mask off
 
-== NO
+== NO!
 
 [source, text]
 so i mask mask mask
@@ -119,8 +119,8 @@ what is real real real
 [source, text]
 and so when i feel down
 and all my thoughts spin round
-i work it out out out
-i work it out
+i block it out out out
+i block it out
 
 [source, text]
 and i mask mask mask
@@ -131,8 +131,8 @@ what is real real real
 [source, text]
 and so when i feel down
 and all my thoughts spin round
-i work it out out out
-i work it out
+i block it out out out
+i block it out
 
 [source, text]
 feel a little bit crazy lately
